@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2368.73 635 29.739 26.5">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.65;
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-3 {
+        opacity: 0.2;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="14.869" cy="2.23" r="87.619" gradientTransform="translate(12.639 2.164) scale(0.15 0.03)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#848484"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="18.509" cy="6.157" r="18.326" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e4e4e4"/>
+      <stop offset="0.17" stop-color="#979797"/>
+      <stop offset="0.574" stop-color="#696969"/>
+      <stop offset="0.819" stop-color="#575757"/>
+      <stop offset="1" stop-color="#666"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.001" y1="0.501" x2="1.001" y2="0.501" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Jira_OFF" transform="translate(-2647)">
+    <rect id="Rectangle_513" data-name="Rectangle 513" class="cls-1" width="29.739" height="4.461" rx="2.23" transform="translate(278.27 657.039)"/>
+    <g id="Group_1590" data-name="Group 1590">
+      <g id="Group_1582" data-name="Group 1582" transform="translate(281 635.042)">
+        <circle id="Ellipse_155" data-name="Ellipse 155" class="cls-2" cx="11.99" cy="11.99" r="11.99" transform="translate(0 -0.022)"/>
+        <path id="Path_682" data-name="Path 682" class="cls-3" d="M16.383,6.5c3.6-.911,4.6,4.172,5.995,5.084.911.623,2.734-.719,2.3-3.357S21.274,1.848,17.582.7,10.052-.454,6.6,2.088s-4.077,5.947-2.494,8.3C7.126,14.893,10.388,7.987,16.383,6.5Z" transform="translate(-1.707 0)"/>
+      </g>
+      <g id="Group_1583" data-name="Group 1583" transform="translate(0 1)">
+        <path id="Path_92" data-name="Path 92" class="cls-4" d="M287.519,21.261h-2.2a.327.327,0,0,1-.252-.126.478.478,0,0,1-.126-.252,4.206,4.206,0,0,0-.756-2.016,3.621,3.621,0,0,0-.756,2.016c0,.126,0,.189-.126.252a.478.478,0,0,1-.252.126h-2.2a.327.327,0,0,1-.252-.126.477.477,0,0,1-.126-.252,7.544,7.544,0,0,1,1.7-4.283c-.063,0-.063-.063-.126-.063a8.6,8.6,0,0,1-3.339-5.858.481.481,0,0,1,.126-.315.472.472,0,0,1,.315-.063l2.331.63c.189.063.315.189.252.378,0,.126.126,1.134,2.394,3.213,2.394-2.142,2.394-3.15,2.394-3.213a.345.345,0,0,1,.252-.378l2.331-.63a.472.472,0,0,1,.315.063.481.481,0,0,1,.126.315,8.6,8.6,0,0,1-3.339,5.858h0c-.063,0-.063.063-.126.063a8.145,8.145,0,0,1,1.7,4.283.327.327,0,0,1-.126.252C287.708,21.2,287.645,21.261,287.519,21.261Zm-1.827-.756h1.449a7.217,7.217,0,0,0-1.7-3.717.333.333,0,0,1,.063-.5c.126-.126.252-.189.378-.315h0a8.419,8.419,0,0,0,3.024-4.787l-1.575.441c-.126.567-.63,1.764-2.835,3.717a.381.381,0,0,1-.5,0c-2.2-1.953-2.709-3.15-2.835-3.717l-1.575-.441a8.419,8.419,0,0,0,3.024,4.787c.126.126.252.189.378.315a.39.39,0,0,1,.063.5,7.661,7.661,0,0,0-1.7,3.717h1.449a5.684,5.684,0,0,1,1.2-2.583.457.457,0,0,1,.63,0A7.009,7.009,0,0,1,285.692,20.5Zm-3.842-9.134Z" transform="translate(9.3 632.739)"/>
+        <path id="Path_93" data-name="Path 93" class="cls-4" d="M286.41,13.324h0a.346.346,0,0,1-.315-.189l-1.323-2.268a.4.4,0,0,1,0-.378.346.346,0,0,1,.315-.189h2.583a.346.346,0,0,1,.315.189.4.4,0,0,1,0,.378l-1.323,2.268C286.662,13.261,286.536,13.324,286.41,13.324Zm-.63-2.2.693,1.134.693-1.134Z" transform="translate(7.07 632.739)"/>
+        <ellipse id="Ellipse_37" data-name="Ellipse 37" class="cls-4" cx="1.323" cy="1.323" rx="1.323" ry="1.323" transform="translate(292.157 638)"/>
+        <ellipse id="Ellipse_38" data-name="Ellipse 38" class="cls-4" cx="1.323" cy="1.323" rx="1.323" ry="1.323" transform="translate(295.685 639.701)"/>
+        <ellipse id="Ellipse_39" data-name="Ellipse 39" class="cls-4" cx="1.323" cy="1.323" rx="1.323" ry="1.323" transform="translate(288.63 639.701)"/>
+      </g>
+    </g>
+  </g>
+</svg>

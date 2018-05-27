@@ -1,0 +1,59 @@
+<div class="container">
+    <nav>
+        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-recent-tab" data-toggle="tab" href="#recent" role="tab" aria-controls="nav-recent" aria-selected="true">RECENT</a>
+          <a class="nav-item nav-link" id="nav-active-tab" data-toggle="tab" href="#active" role="tab" aria-controls="nav-active" aria-selected="false">ACTIVE</a>
+        </div>
+    </nav>
+  <div class="tab-content">
+      <div id="recent" class="tab-pane fade show active">
+          <ul id="contact-list" class="list-group" >
+              <li *ngFor="let contacto of contactos"  class="list-group-item " >
+                  <div (click)="myFunction(contacto.id)" class="row">
+                       <div class="col-3">
+                          <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
+                          <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
+                            <circle cx="35" cy="8" r="3.5" stroke="white" stroke-width="1" fill="#98E600" />
+                          </svg>
+                        </div>
+                        <div  class="col-6">
+                          <a class="text-sm-left">{{contacto.nombre}}</a>
+                          <p class="text-secondary" aria-hidden="true">{{contacto.mensaje}}</p>
+                        </div>
+                        <div class="col-3">
+                          <p class="text-secondary">9:12 pm</p>
+                          <span *ngIf="contacto.aviso == true" id = {{contacto.id}} class="badge badge-primary badge-pill">1</span>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+          </ul>
+      </div>
+      <div id="active" class="tab-pane fade">
+          <ul id="activo-list" class="list-group" >
+              <li *ngFor="let activo of active"  class="list-group-item " >
+                  <div (click)="myFunction(activo.id)" class="row">
+                       <div class="col-3">
+                          <img id="foto-contacto" src = {{activo.imagen}}  class="rounded-circle" />
+                          <svg *ngIf="activo.estado == true" id="estado" height="60" width="60">
+                            <circle cx="35" cy="8" r="3.5" stroke="white" stroke-width="1" fill="#98E600" />
+                          </svg>
+                        </div>
+                        <div  class="col-6">
+                          <a class="text-sm-left">{{activo.nombre}}</a>
+                          <p class="text-secondary" aria-hidden="true">{{activo.mensaje}}</p>
+                        </div>
+                        <div class="col-3">
+                          <p class="text-secondary">9:12 pm</p>
+                          <span *ngIf="activo.aviso == true" id = {{activo.id}} class="badge badge-primary badge-pill">1</span>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+          </ul>
+      </div>
+  </div>
+
+</div>
+  
+  

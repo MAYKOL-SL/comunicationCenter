@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="card border-light mb-3">
+        <div class="card-header bg-transparent">
+            <div class="media">
+                <img  src="../../../assets/imagenes/iconos/Notification.svg" class="align-self-center mr-3" />
+                <h5  class="mt-0">{{titulo}}</h5>
+            </div>
+        </div>
+        <div class="panel panel-default" id="notifi">
+            <ul  class="list-group" id="notifi-list">
+                <li *ngFor="let notification of notifications" class="list-group-item">
+                    <div (click)="myFunction(notification.id)" class="row">
+                        <div class="col-3">
+                            <img id= {{notification.id}} src={{notification.icono}} class="align-self-center" />
+                        </div>
+                        <div  class="col-6">
+                            <a class="text-sm-left">{{notification.titulo}}</a>
+                            <p class="text-secondary" aria-hidden="true">{{notification.descripcion}}</p>
+                        </div>
+                        <div class="col-3">
+                            <span *ngIf="notification.visto == true" class="badge badge-secondary">¡</span>
+                            <p class="text-secondary">{{notification.hora}}</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <footer id="footer" class="row">
+        </footer> 
+      </div>
+         
+    
+
+</div>

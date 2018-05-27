@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2207 27 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #5e5d5d;
+      }
+    </style>
+  </defs>
+  <g id="Back" transform="translate(-2220 -36)">
+    <g id="Group_2022" data-name="Group 2022" transform="translate(13 63)">
+      <circle id="Ellipse_232" data-name="Ellipse 232" class="cls-1" cx="12" cy="12" r="12"/>
+      <path id="Path_1327" data-name="Path 1327" class="cls-2" d="M16.744,5.8l-5.25,5.25a2.128,2.128,0,0,0,0,3l5.25,5.25a2.106,2.106,0,0,1-1.5,3.6h0a2.094,2.094,0,0,1-1.5-.6l-8.25-8.25a2.128,2.128,0,0,1,0-3l8.25-8.25a2.23,2.23,0,0,1,1.5-.6h0A2.1,2.1,0,0,1,16.744,5.8Z" transform="translate(-1.219 -0.549)"/>
+    </g>
+  </g>
+</svg>

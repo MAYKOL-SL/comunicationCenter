@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 405.001 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0.85;
+      }
+
+      .cls-2 {
+        filter: url(#Header);
+      }
+    </style>
+    <filter id="Header" x="0" y="0" width="405.001" height="80" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.549"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Header-2" data-name="Header" class="cls-1" d="M4181,8020v-39h375v49.305c-25.066.461-50.325.7-75.5.7Q4329.441,8031,4181,8020Z" transform="translate(-4166 -7967)"/>
+  </g>
+</svg>

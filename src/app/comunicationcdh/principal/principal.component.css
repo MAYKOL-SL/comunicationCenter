@@ -1,0 +1,29 @@
+.espaciado{
+  padding: 23px 0px 0px 0px;
+}
+.containercolor{
+  background: #e1e1ef;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #izquierda{
+          display:none;
+  }
+  #derecha{
+      display:none;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #izquierda{
+      display:none;
+  }
+  #derecha{
+      display:none;
+  }
+}
+
+.pad{
+  padding: 1px 46px 1px 38px;
+}

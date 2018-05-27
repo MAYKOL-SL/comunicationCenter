@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1479 360 32 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #5e5d5d;
+      }
+    </style>
+  </defs>
+  <g id="Sent" transform="translate(-1479 360)">
+    <g id="Group_2050" data-name="Group 2050">
+      <rect id="Rectangle_631" data-name="Rectangle 631" class="cls-1" width="32" height="24"/>
+    </g>
+    <g id="Group_2051" data-name="Group 2051">
+      <path id="Path_1331" data-name="Path 1331" class="cls-2" d="M6,11.6,1.9,1.6c-.1-.2,0-.4,0-.5.1-.2.2-.2.4-.2h.2L29.4,11.6H6Z"/>
+      <path id="Path_1332" data-name="Path 1332" class="cls-3" d="M2.3,1.4l24.4,9.7H6.3l-4-9.7m0-1a.912.912,0,0,0-.9,1.3L5.6,12H32L2.7.4Z"/>
+    </g>
+    <g id="Group_2052" data-name="Group 2052">
+      <path id="Path_1333" data-name="Path 1333" class="cls-2" d="M2.3,23.3a.52.52,0,0,1-.4-.2c-.1-.1-.1-.2,0-.5L6,12.6H29.4L2.5,23.2C2.4,23.3,2.4,23.3,2.3,23.3Z"/>
+      <path id="Path_1334" data-name="Path 1334" class="cls-3" d="M26.8,13.1,2.3,22.8l4-9.7H26.8m5.2-1H5.6L1.4,22.4a1.025,1.025,0,0,0,.9,1.4.756.756,0,0,0,.4-.1L32,12.1Z"/>
+    </g>
+  </g>
+</svg>

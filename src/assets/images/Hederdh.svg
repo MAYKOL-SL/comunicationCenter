@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1950.002 105.543">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0.85;
+      }
+
+      .cls-2 {
+        filter: url(#Intersection_1);
+      }
+    </style>
+    <filter id="Intersection_1" x="0" y="0" width="1950.002" height="105.543" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.549"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Symbol_10" data-name="Symbol 10" transform="translate(15.002 14)">
+    <g class="cls-2" transform="matrix(1, 0, 0, 1, -15, -14)">
+      <path id="Intersection_1-2" data-name="Intersection 1" class="cls-1" d="M4181,8039.923V7981H6101v74.493c-128.34.7-257.664,1.05-386.57,1.05Q4941.016,8056.543,4181,8039.923Z" transform="translate(-4166 -7967)"/>
+    </g>
+  </g>
+</svg>

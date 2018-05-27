@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="card border-light mb-3">
+    <div class="card-header bg-transparent">
+      <button type="button" class="btn btn-link">
+        <img  src="../../../assets/imagenes/iconos/CHAT_ON.svg" />
+        <h5>{{titulo}}</h5>
+      </button>
+    </div>
+    <div class="panel panel-default" class="col-lg-12">
+      <ul id="online-list">
+        <li *ngFor="let contacto of contactos">
+          <img id="foto-online" src = {{contacto.imagen}}  class="rounded-circle" />
+        </li>
+      </ul>
+    </div>
+    <div class="panel panel-default" id="contacts">
+      <ul id="contact-list" class="list-group" >
+        <li *ngFor="let contacto of contactos"  class="list-group-item " >
+          <div (click)="myFunction(contacto.id)" class="row">
+            <div class="col-3">
+              <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
+              <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
+                <circle cx="35" cy="8" r="3.5" stroke="white" stroke-width="1" fill="#98E600" />
+              </svg>
+            </div>
+            <div  class="col-6">
+              <a class="text-sm-left">{{contacto.nombre}}</a>
+              <p class="text-secondary" aria-hidden="true">{{contacto.mensaje}}</p>
+            </div>
+            <div class="col-3">
+              <p class="text-secondary">9:12 pm</p>
+              <span id = {{contacto.id}} class="badge badge-primary badge-pill">1</span>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+    <footer id="footer" class="row">
+        <div class="col-2 well">
+          <img id="search" src="../../../assets/imagenes/iconos/Search.svg">
+        </div>
+        <div id="search-text" class="col-7 well">
+          <input class="form-control" type="search" placeholder="Search Contacts" aria-label="Search">
+        </div>
+        <div class="col-3 well">
+          <img id="luci" src="../../../assets/imagenes/iconos/Lucy.svg">
+        </div>
+    </footer>
+  </div>
+  
+</div>

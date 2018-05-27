@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2647 641 375 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.902"/>
+      <stop offset="0.071" stop-color="#f5f4f5" stop-opacity="0.902"/>
+      <stop offset="1" stop-color="#d6d3d6" stop-opacity="0.902"/>
+    </linearGradient>
+  </defs>
+  <path id="Intersection_7" data-name="Intersection 7" class="cls-1" d="M2024,64V45.614q80.235-7.557,162.5-7.614A1729.164,1729.164,0,0,1,2399,51.063V64Z" transform="translate(-4671 603)"/>
+</svg>

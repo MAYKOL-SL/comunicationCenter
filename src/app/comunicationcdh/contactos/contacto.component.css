@@ -1,0 +1,160 @@
+@media screen and (max-height: 1366px) and (min-height: 1025px) {
+    #contact-list{
+        height: 1200px;
+    } 
+    #activo-list{
+       height: 850px;
+       }
+}
+@media screen and (max-height: 1024px) and (min-height: 824px) {
+    #contact-list{
+        height: 850px;
+    } 
+    #activo-list{
+       height: 850px;
+       }
+}
+@media screen and (max-height: 823px) and (min-height: 737px) {
+    #contact-list{
+        height: 640px;
+    } 
+    #activo-list{
+       height: 640px;
+       }
+}
+@media screen and (max-height: 736px) and (min-height: 668px) {
+    #contact-list{
+        height: 570px;
+    } 
+    #activo-list{
+       height: 570px;
+       }
+}
+@media screen and (max-height: 667px) and (min-height: 641px) {
+    #contact-list{
+        height: 500px;
+    } 
+    #activo-list{
+       height: 500px;
+       }
+}
+@media screen and (max-height: 640px) and (min-height: 569px) {
+    #contact-list{
+        height: 470px;
+    } 
+    #activo-list{
+       height: 470px;
+       }
+}
+@media screen and (max-height: 568px) and (min-height: 361) {
+    #contact-list{
+        height: 400px;
+    } 
+    #activo-list{
+       height: 400px;
+       }
+}
+@media screen and (max-height: 360px) {
+ #contact-list{
+     height: 200px;
+ } 
+ #activo-list{
+    height: 200px;
+    }  
+    
+}
+
+.container{
+    padding: 0px;
+    margin: 0px;   
+    box-sizing: none;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 2px 2px 3px #ccc;
+}
+
+
+#contact-list{
+    /*height: 300px;*/
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    
+}
+#activo-list{
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    
+}
+
+#contact-list li{
+    height: 60px;
+    width: auto;
+}
+#activo-list li{
+    height: 60px;
+    width: auto;
+}
+#contact-list li:hover{
+    background: #ccc;
+} 
+#activo-list li:hover{
+    background: #ccc;
+} 
+
+.row p{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    color: #808080;
+    font-size: 10px;
+    margin: 0;
+}
+
+.row a{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    color: black;
+    font-size: 12px;
+    margin: 0;
+    padding: none;
+}
+
+
+.row span{
+    
+    margin: 0;
+    font-size: 10px;
+}
+
+#contact-list li{
+    padding: 10px;
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    border-bottom: 0px solid white;
+    position: relative;
+}
+#activo-list li{
+    padding: 10px;
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    border-bottom: 0px solid white;
+    position: relative;
+}
+#contact-list img{
+    width: 40px;
+    height: 40px;
+}
+#activo-list img{
+    width: 40px;
+    height: 40px;
+}
+#estado{
+    padding-top: -100px;
+    margin-top: -100px;
+}

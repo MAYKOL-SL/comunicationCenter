@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2656 605 393 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        filter: url(#Intersection_2);
+      }
+    </style>
+    <filter id="Intersection_2" x="-2656" y="605" width="393" height="71" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Intersection_2-2" data-name="Intersection 2" class="cls-1" d="M2024,91V45.614q80.235-7.557,162.5-7.614A1729.164,1729.164,0,0,1,2399,51.063V91Z" transform="translate(-4671 576)"/>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2588 627.579 32 32.027">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        opacity: 0.2;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="24.7" cy="8.217" r="19.217" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b9f7c3"/>
+      <stop offset="0.162" stop-color="#59e991"/>
+      <stop offset="1" stop-color="#0d9282"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.001" y1="0.501" x2="1.001" y2="0.501" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1635" data-name="Group 1635" transform="translate(-2588 627.621)">
+    <circle id="Ellipse_152" data-name="Ellipse 152" class="cls-1" cx="16" cy="16" r="16" transform="translate(0 -0.015)"/>
+    <path id="Path_672" data-name="Path 672" class="cls-2" d="M20.765,8.689c4.8-1.216,6.144,5.568,8,6.784,1.216.832,3.648-.96,3.072-4.48S27.293,2.481,22.365.945,12.317-.591,7.709,2.8s-5.44,7.936-3.328,11.072C8.413,19.889,12.765,10.673,20.765,8.689Z" transform="translate(-1.181 0)"/>
+    <g id="Group_1554" data-name="Group 1554" transform="translate(7.296 7.601)">
+      <g id="Group_1553" data-name="Group 1553">
+        <path id="Path_673" data-name="Path 673" class="cls-3" d="M21.7,11.9H18.5A7.048,7.048,0,0,0,11.4,19a7.293,7.293,0,0,0,3.712,6.464c.064,1.088.064,1.6.128,2.624a.634.634,0,0,0,1.024.448l2.176-2.176h3.328a7.158,7.158,0,0,0,7.04-7.3A7.062,7.062,0,0,0,21.7,11.9Z" transform="translate(-11.4 -11.9)"/>
+        <g id="Group_1550" data-name="Group 1550" transform="translate(7.744 5.692)">
+          <path id="Path_674" data-name="Path 674" class="cls-4" d="M26.188,22.142A1.344,1.344,0,1,1,24.844,20.8,1.311,1.311,0,0,1,26.188,22.142Z" transform="translate(-23.5 -20.793)"/>
+        </g>
+        <g id="Group_1551" data-name="Group 1551" transform="translate(12.48 5.696)">
+          <path id="Path_675" data-name="Path 675" class="cls-4" d="M33.46,22.144a1.282,1.282,0,1,1-2.56,0A1.3,1.3,0,0,1,32.18,20.8,1.34,1.34,0,0,1,33.46,22.144Z" transform="translate(-30.9 -20.8)"/>
+        </g>
+        <g id="Group_1552" data-name="Group 1552" transform="translate(3.008 5.696)">
+          <path id="Path_676" data-name="Path 676" class="cls-4" d="M18.724,22.144a1.312,1.312,0,0,1-1.344,1.344,1.346,1.346,0,0,1,0-2.688A1.352,1.352,0,0,1,18.724,22.144Z" transform="translate(-16.1 -20.8)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

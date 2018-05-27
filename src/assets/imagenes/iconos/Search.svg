@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2323 3 44 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1989bf;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #5e5d5d;
+      }
+    </style>
+  </defs>
+  <g id="Search" transform="translate(-2563 3)">
+    <path id="Path_192" data-name="Path 192" class="cls-1" d="M0,44H44V0H0Z" transform="translate(240)"/>
+    <path id="Path_568" data-name="Path 568" class="cls-2" d="M15.252,14.2A8.628,8.628,0,0,0,8.645,0a8.645,8.645,0,0,0,0,17.291A8.557,8.557,0,0,0,14.2,15.252L20.946,22l.984-.984ZM.7,8.645a7.942,7.942,0,1,1,7.942,7.942A7.98,7.98,0,0,1,.7,8.645Z" transform="translate(251 11)"/>
+  </g>
+</svg>

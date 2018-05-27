@@ -1,0 +1,110 @@
+
+/*body {
+    padding-top: 54px;
+    background: #e1e1ef;
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+    }
+  }*/
+  
+  .imgfondo{
+    background: url("../../../assets/imagenes/HeaderDesktop.jpg");
+    background-repeat: no-repeat;
+    padding: 9px 0px 21px 11px;
+  }
+  
+  .bordeicon{
+    padding: 5px 18px 4px 7px;
+  }
+  
+  .size-text{
+    font-size: 23px;
+    color: #00b7ff;
+  }
+  
+  a:link
+  {
+    text-decoration:none;
+  }
+  
+  .text-color{
+    color:#343a404d !important;
+  }
+  
+  .containercolor{
+    background: #e1e1ef;
+  }
+  
+  .espaciado{
+    padding: 23px 0px 0px 0px;
+  }
+  
+  .borde-header{
+    padding: 1px 0px 0px 0px;
+  }
+  
+  .bor-img{
+    border-color: #5c3e3e;
+    box-shadow: 0 1px 0 #d41d1d;
+    border-radius: 3px;
+    padding: 1px;
+  }
+  
+  .img-border{
+    width: 20px;
+    height: 21px;
+    border-radius: 50%;
+  }
+
+
+  /*buscador header de la esquina*/
+.header-search-span {
+    float: right;
+    width: 250px;
+    display: inline-block;
+}
+
+.header-search {
+    width: 230px;
+    position: relative;
+    float: left;
+}
+
+    .header-search input {
+        position: absolute;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        border-radius:0;
+        padding: 0 2px 0 2px;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+
+        .header-search:hover input, .header-search input:focus {
+            width: 200px;
+            margin-left: 0px;
+            color: #ffffff;
+            font-weight: bold;
+            background: rgba(9, 11, 9, 0.93);
+        }
+
+        .header-search input::placeholder {
+            color: #ffffff;
+            font-weight: normal;
+        }
+
+.btn-srch {
+    position: absolute;
+    right: 0;
+    border: 0;
+    background: transparent;
+}
