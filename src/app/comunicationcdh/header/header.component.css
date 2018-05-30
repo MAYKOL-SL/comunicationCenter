@@ -128,3 +128,92 @@
      display:block;
   }
 }
+
+/*ultimo miercoles 2952018*/
+.ancho-img{
+  width: 94%;
+  height: 63%;
+}
+
+.margen-muro{
+  margin: 0px 9px 0px 15px;
+}
+
+.margen-icon{
+  padding: 15px 44px 15px 34px;
+}
+
+.margen-texto-modal{
+  margin: 0px 0px 2px 1px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 31px;
+  color: #96908b;
+}
+
+.margen-subtitulo-modal{
+  margin: -14px 0px 4px 0px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+  color: #c9c5c1;
+}
+
+.margen-titleicon-modal{
+  margin: 0px 0px 2px 1px;
+  text-align: center;
+  font-weight: 899;
+  font-size: 15px;
+  color: #96908b;
+}
+
+
+@media (min-width: 320px) {
+  .margen-titleicon-modal{
+    margin: 16px 0px 16px 0px;
+  }
+}
+
+/*bodrde del car modal ultimo*/
+.card-borde{
+  border-radius: 1.25rem;
+}
+.color-header{
+  background: #f9f8f800;
+}
+
+.update-card-MDimentions{
+  width: 47px;
+  height: 45px;
+  border-radius:50%;
+}
+.media-heading{
+  font-size: medium;
+}
+
+.info{
+  font-size: x-small;
+}
+
+.card-pad{
+  padding: 0rem;
+}
+
+.icons{
+    margin:0 auto;
+    display:table;
+}
+
+@media (min-width: 320px) {
+ .icon-pad{
+   padding: 1px 16px 1px 4px ;
+ }
+}
+/* 4 columnas para grandes tablets*/
+@media (min-width: 992px) {
+ .icon-pad{
+   padding: 1px 27px 1px 0px ;
+ }
+}
+
+
