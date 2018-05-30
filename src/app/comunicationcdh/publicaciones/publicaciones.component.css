@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
 /*css buscador que aparece con modal*/
 
 .bord-serch{
@@ -210,3 +211,274 @@
     height: 21px;
     border-radius: 50%;
   }
+
+
+  /*ingresado ultimo 30 de mayo 18*/
+
+.img-fluid-g{
+  max-width: 100%;
+  height: 156px;
+}
+
+.cont {
+  width: 300px;
+  height: 500px;
+  background: #fff;
+  margin: 10px auto;
+  text-align: center;
+  padding: 0 12px 12px 12px;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-top: 12px solid white;
+}
+.cont .picture {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 445px;
+  background: url("https://s-media-cache-ak0.pinimg.com/originals/24/8d/f5/248df520ef2048d0614c73f90b9de4ab.jpg");
+  background-color: #CBB618;
+  background-size: cover;
+  transition: all 0.5s ease;
+  animation: pictureDown 0.7s;
+  animation-fill-mode: forwards;
+}
+.cont .picture_up {
+  animation: pictureUp 0.7s;
+  animation-fill-mode: forwards;
+}
+.cont .options {
+  position: relative;
+  bottom: 110px;
+  width: 300px;
+  height: 37px;
+  display: none;
+  opacity: 0;
+  padding: 15px 0 0 0;
+  user-select: none;
+  font-size: 24px;
+  color: #FFF;
+  text-align: left;
+}
+.cont .options i {
+  padding-left: 52px;
+}
+.cont .options_show {
+  animation: optionsDisplay 0.7s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+.cont .navigation {
+  width: 100%;
+  height: 55px;
+  position: relative;
+  bottom: 0;
+  color: #4E347F;
+  text-align: left;
+  font-size: 24px;
+}
+.cont .navigation .plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34px;
+  height: 34px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.cont .navigation .plus .plusHor {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 2px;
+  background: #4E347F;
+}
+.cont .navigation .plus .plusVer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 24px;
+  background: #4E347F;
+  animation: deactivation 0.7s;
+  animation-fill-mode: forwards;
+}
+.cont .navigation .plus .plusVer_active {
+  animation: activation 0.7s;
+  animation-fill-mode: forwards;
+  width: 300px;
+  height: 55px;
+  top: -38px;
+}
+
+.nav_btns {
+  padding-top: 13px;
+  padding-left: 11px;
+  animation: navShow 0.7s;
+  animation-fill-mode: forwards;
+}
+.nav_btns .nav_btn {
+  margin-left: 32px;
+}
+.nav_btns .nav_btn_r {
+  margin-left: 83px;
+}
+
+.nav_btns_hide {
+  animation: navHide 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes activation {
+  0% {
+    width: 2px;
+    height: 34px;
+    top: 50%;
+  }
+  50% {
+    width: 2px;
+    height: 55px;
+    top: -38px;
+  }
+  100% {
+    width: 300px;
+    height: 55px;
+    top: -38px;
+  }
+}
+@keyframes deactivation {
+  0% {
+    width: 300px;
+    height: 55px;
+    top: -38px;
+  }
+  50% {
+    width: 2px;
+    height: 55px;
+    top: -38px;
+  }
+  100% {
+    width: 2px;
+    height: 24px;
+    top: 50%;
+  }
+}
+@keyframes pictureUp {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -65px;
+  }
+  100% {
+    top: -65px;
+  }
+}
+@keyframes pictureDown {
+  0% {
+    top: -65px;
+  }
+  50% {
+    top: -65px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes optionsDisplay {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes navShow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes navHide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.area{
+  width: 100%;
+  height: auto;
+  padding: 1px 1px 35px 1px;
+}
+
+/*header modal*/
+.modal-header{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  
+}
+.close{
+  position: absolute;;
+  background: url("../../../assets/images/Back.svg");
+  line-height:30px;
+  top: 5%;  
+}
+#text-back{
+  position: absolute;
+  font-weight: normal;
+  color:#1082FF;
+  line-height:30px;
+  top: 2%;
+  left: 40px;
+  cursor: pointer;
+}
+#text-principal{
+  position: absolute;
+  font-weight: normal;
+  line-height:30px;
+  top: 2%;
+  left: 45%;
+}
+#cant-like{
+  position: absolute;
+  font-weight: normal;
+  line-height:30px;
+  top: 2%;
+  left: 85%;
+}
+#like-comment{
+  position: absolute;
+  font-weight: normal;
+  line-height:30px;
+  top: 2%;
+  left: 90%;
+  width: 30px;
+  height: 30px;
+}
+
+.alineado-icon{
+  margin: -32px 6px 4px -1px;
+}
+
+.alineado-icon-2{
+  margin: -18px 6px 4px -1px;
+}
