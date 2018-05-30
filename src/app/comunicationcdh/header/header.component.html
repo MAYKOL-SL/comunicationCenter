@@ -1,20 +1,20 @@
 <header class="borde-header">
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top imgfondo">
      <div class="col-12 row flex-nowrap justify-content-between align-items-center">
-       <div class="col-4 pt-1">
+       <div class="col-4 pt-1 alineado-textico">
          <a class="bordeicon">
-          <span class="fas fa-bars fa-lg"></span>
+          <span class="fas fa-bars fa-lg" data-toggle="modal" data-target="#exampleModal"></span>
          </a>
          <a class="size-text" href="#">New</a>
        </div>
-       <div class="col-4 text-center des">
+       <div class="col-4 text-center texto-centro">
          <a class="blog-header-logo text-color" href="#">Comunication center</a>
        </div>
        <div class="col-4 d-flex justify-content-end align-items-center">
          <!--a class="text-muted" href="#">
            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
          </a-->
-         <span class="archive-link pull-right header-search-span">
+         <span class="archive-link pull-right header-search-span alineado-busqueda">
               <span class="header-search">
                       <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
                       <a href="#link" role="button" class="btn-srch"><i class="fa fa-search"></i></a>
@@ -23,4 +23,145 @@
        </div>
      </div>
   </nav>
+
+     <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <div class="media block-update-card">
+          <a class="pull-left" href="#">
+            <img class="media-object update-card-MDimentions" src="../../../assets/images/imgdh/dhmagdif.png" alt="...">
+          </a>
+          <div class="media-body update-card-body">
+            <h4 class="media-heading">Manning Hilton</h4>
+            <p class="info">Digital Harbor</p>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="fa fa-power-off fa-lg" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <p class="margen-texto-modal">Main menu</p>
+        </div>
+        <div>
+            <p class="margen-subtitulo-modal">Social Comunication Center</p>
+        </div>
+        <!--contenido del centro inicio-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-4">
+              <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                <span class="fa fa-globe fa-lg margen-icon" aria-hidden="true"></span>
+              </button>
+              <div>
+                  <p class="margen-titleicon-modal">Wall News</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                <span class="fa fa-calendar-check fa-lg margen-icon" aria-hidden="true"></span>
+              </button>
+              <div>
+                  <p class="margen-titleicon-modal">Tast</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="fa fa-envelope fa-lg margen-icon" aria-hidden="true"></span>
+              </button>
+              <div>
+                  <p class="margen-titleicon-modal">Mail</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-4">
+              <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                <span class="fa fa-calendar fa-lg margen-icon" aria-hidden="true"></span>
+              </button>
+              <div>
+                  <p class="margen-titleicon-modal">Appointment</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                <span class="fa fa-child fa-lg margen-icon" aria-hidden="true"></span>
+              </button>
+              <div>
+                  <p class="margen-titleicon-modal">Jira</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                <span class="fa fa-object-group fa-lg margen-icon" aria-hidden="true"></span>
+              </button>
+              <div>
+                  <p class="margen-titleicon-modal">Album</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-4">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="fa fa-registered fa-lg margen-icon" aria-hidden="true"></span>
+              </button>
+              <div>
+                  <p class="margen-titleicon-modal">Set</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="fa fa-trademark fa-lg margen-icon" aria-hidden="true"></span>
+              </button>
+              <div>
+                  <p class="margen-titleicon-modal">Pepe Portal</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="fa fa-signal fa-lg margen-icon" aria-hidden="true"></span>
+                  </button>
+                  <div>
+                      <p class="margen-titleicon-modal">Dashboard</p>
+                  </div>  
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-4">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="fa fa-comment fa-lg margen-icon" aria-hidden="true"></span>
+                  </button>
+                  <div>
+                      <p class="margen-titleicon-modal">Chat</p>
+                  </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="fa fa-address-book fa-lg margen-icon" aria-hidden="true"></span>
+                  </button>
+                  <div>
+                      <p class="margen-titleicon-modal">Lucy Assistant</p>
+                  </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="fa fa-plus-circle fa-lg margen-icon" aria-hidden="true"></span>
+                  </button>
+                  <div>
+                      <p class="margen-titleicon-modal">Add New</p>
+                  </div>
+            </div>
+          </div> 
+        </div>
+        <!--contenido del centro fin-->
+      </div>
+      
+    </div>
+  </div>
+</div>
+
 </header>

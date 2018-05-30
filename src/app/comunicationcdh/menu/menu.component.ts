@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
     styleUrls: ['./menu.component.css']
   })
 
-  export class MenuComponent{
+  export class MenuComponent {
     constructor() { }
 
+  // tslint:disable-next-line:use-life-cycle-interface
   ngOnInit() {
   }
   }

@@ -40,7 +40,7 @@
 }
 .profile-card-4 h5{
     font-weight:600;
-    color:#d90be1;
+    color:#0bc3e1;
 }
 .profile-card-4 .card-text{
     font-weight:300;
@@ -68,4 +68,12 @@
 .profile-card-4 i:hover {
   background-color:#d90be1;
   color:#fff;
+}
+
+
+.bordes-imagen{
+    border-radius: 6% 6% 0% 0%;
+}
+.borde-card{
+    border-radius: 4%;
 }

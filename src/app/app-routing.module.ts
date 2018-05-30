@@ -5,6 +5,10 @@ import { PrincipalComponent } from './comunicationcdh/principal/principal.compon
 import { CalendarComponent } from './comunicationcdh/calendar/calendar.component';
 import { ChatGeneralComponent } from './comunicationcdh/chat/chat-general.component';
 import { MensajeComponent } from './comunicationcdh/mensaje/mensaje.component';
+import { MenuComponent } from './comunicationcdh/menu/menu.component';
+import { ChatComponent } from './comunicationcdh/list-chat/chat.component';
+import { CommentComponent } from './comunicationcdh/ChatComment/comment.component';
+
 
 
 
@@ -20,6 +24,10 @@ const routes: Routes = [
    {
     path: 'calendar',
     component: CalendarComponent
+  },
+  {
+  path: 'chat',
+  component: CommentComponent
   },
   {
     path: 'chat-general',
