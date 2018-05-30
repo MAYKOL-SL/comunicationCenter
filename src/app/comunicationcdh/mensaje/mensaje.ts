@@ -1,12 +1,11 @@
 export class Mensaje{
     constructor(
         public id: number,
-        public nombre: string,
-        public imagen: string,
-        public estado: boolean,
-        public mensaje: string,
-        public ultConx: string,
-        public numMensaje: number
+        public time: string,
+        public mens: string,
+        public escritor: string,
+        public val: boolean
+        
     ){
         
     }
