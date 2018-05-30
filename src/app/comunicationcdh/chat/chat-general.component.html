@@ -84,7 +84,45 @@
         </div>
           <div id="derecha" class="col-12 col-sm-12 col-md-8 ">
             <!--<mensaje></mensaje>-->
+            <section id="mens">
+              <div class="chat">
+                <ul id="mensajes">
+                  <li *ngFor="let mensaje of mensajes" class= {{mensaje.escritor}}>
+                    <a *ngIf="mensaje.val == false" class="user" href="#"><img alt="" src= {{contact1.imagen}} ></a>
+                    <a *ngIf="mensaje.val == true" class="user" href="#"><img alt="" src= {{contact2.imagen}} ></a>
+                    <div class="date">
+                      {{mensaje.time}}
+                    </div>
+                    <div class="row">
+                    <div class="message">
+                      <p>
+                        {{mensaje.mens}}
+                      </p>
+                    </div>
+                  </div>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+              <div class="panel-footer">
+                <form>
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <button data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-camera"></span></button>
+                      </span>
+                      <input id="message-text" type="text" name="mensaje" class="form-control" placeholder="Message">
+                      <span class="input-group-btn">
+                        <button id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
+                      </span>
+                    </div>
+                </form>
+            </div>
             
+            </section>
+            <!--
+            -->
+            <!--
 <section id="mens">
     <div class="chat">
       <ul id="mensajes">
@@ -166,11 +204,27 @@
       </ul>
       
     </div>
-  </section>
+  </section>-->
           </div>
         </div>
     </div>
   </div>
+  <div class="modal" id="modal-photo">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h4 class="modal-title">Envoyer une photo</h4>
+            </div>
+            <div class="modal-body">
+                <input type="file" name ="photo" id="photo" accept="image/*">
+            </div>
+            <div class="modal-footer">
+                <button id="validation" class="btn btn-primary">Envoyer</button>
+            </div>
+        </div>
+      </div>
+    </div>
 </div>
   <!-- /.container-->
 <dh-menu></dh-menu>

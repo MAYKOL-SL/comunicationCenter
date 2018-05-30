@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { Contact } from '../list-chat/contact';
-declare var jQuery:any;
+import { Mensaje } from '../mensaje/mensaje';
 declare var $:any;
 
 @Component({
@@ -18,11 +18,27 @@ export class ChatGeneralComponent{
     public active: Array<Contact>;
     public contact1: Contact;
     public contact2: Contact;
+    public mensajes: Array<Mensaje>;
+
 
     constructor(){
         this.titulo = 'Chat-general';
         this.contact1 = new Contact(1, 'Nick Jones', 'assets/imagenes/contactos/nick.png', true, true, 'hola', '9:12 pm', 1);
         this.contact2 = new Contact(2, 'Eva Moor', 'assets/imagenes/contactos/eva.png', false, false,'hola', '9:12 pm', 1);
+        this.mensajes = [
+            new Mensaje(1, '9:10 am', 'hola como estas?', 'other', false),
+            new Mensaje(2, '9:13 am', 'feliz, te cuento que estoy estudiando', 'you', true),
+            new Mensaje(3, '9:19 am', 'que bueno me alegro por tu familia debe estar orgulloso de ti', 'other', false),
+            new Mensaje(4, '9:31 am', 'me dijeron que viajaste y nadie sabia de ti', 'you', true),
+            new Mensaje(5, '9:32 am', 'donde te metiste?', 'you', true),
+            new Mensaje(6, '9:45 am', 'estuve conociendo un poco el mundo', 'other', false),
+            new Mensaje(7, '9:47 am', 'fui a europa luego a estados unidos pero volvi por que extrane bolivia', 'other', false),
+            new Mensaje(8, '9:59 am', 'claro pues bolivia es un bonito lugar para vivir', 'you', true),
+            new Mensaje(9, '9:59 am', 'si extrane la comida de cochabamba', 'other', false),
+            new Mensaje(10, '10:02 am', 'quisieras ir a cenar manana y hablamos de los viejos tiempos', 'other', false),
+            new Mensaje(11, '11:10 am', 'manana por la noche tendre tiempo', 'you', true),
+
+        ];
         this.contactos = [
             new Contact(1, 'Nick Jones', 'assets/imagenes/contactos/nick.png', true, true, 'hola como esta?, hace tiempo que no te veo', '9:12 pm', 1),
             new Contact(2, 'Eva Moor', 'assets/imagenes/contactos/eva.png', false, false,'hola', '9:12 pm', 1),
@@ -55,6 +71,7 @@ export class ChatGeneralComponent{
 
     ngOnInit(){
         console.log(this.contact);
+        
 
     }
     public myFunction(id){
