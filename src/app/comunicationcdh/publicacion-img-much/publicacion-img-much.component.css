@@ -140,14 +140,22 @@
    }
    .contLike{
           padding: 0px 58px 0px 4px;
+          left: 15%;
+   }
+   #p1{
+     position: absolute;
    }
  
    .contChat{
           padding: 0px 58px 1px 4px;
+          left: 25%;
+          
    }
  
    .contShare{
           padding: 0px 2px 0px 4px;
+          left: 80%;
+          
    }
  }
  /* 4 columnas para grandes tablets*/

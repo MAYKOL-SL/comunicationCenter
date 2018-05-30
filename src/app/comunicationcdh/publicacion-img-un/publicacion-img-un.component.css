@@ -117,14 +117,19 @@
    }
    .contLike{
           padding: 0px 86px 0px 6px;
+          left: 15%;          
    }
- 
+   #p1{
+    position: absolute;
+    }
    .contChat{
           padding: 0px 70px 1px 4px;
+          left: 25%;          
    }
  
    .contShare{
           padding: 0px 2px 0px 4px;
+          left: 80%;          
    }
  }
  
