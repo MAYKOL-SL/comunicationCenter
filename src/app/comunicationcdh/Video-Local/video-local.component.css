@@ -97,16 +97,22 @@
        /*padding: 0px 31px;*/
    }
    .contLike{
-          cursor: pointer;
-          padding: 0px 58px 0px 4px;
+          padding: 0px 86px 0px 6px;          
+          left: 8%;
+          cursor: pointer;          
    }
- 
+   #p1{
+    position: absolute;
+    }
    .contChat{
-          padding: 0px 58px 1px 4px;
+          padding: 0px 70px 1px 4px;
+          left: 25%;  
+          cursor: pointer;        
    }
  
    .contShare{
           padding: 0px 2px 0px 4px;
+          left: 80%;          
    }
  }
  /* 4 columnas para grandes tablets*/
