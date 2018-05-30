@@ -419,6 +419,8 @@
   
 }
 .message-submit{
+  position: absolute;
+  top: 10px;
   width:45px;
   height:45px;
   background-color:#FFFFFF;
@@ -438,7 +440,7 @@
   font-weight: normal;
   line-height:30px;
   top: 0%;
-  left: 89%;
+  left: 30%;
   width: 36px;
   height: 68px;
   cursor: pointer;
