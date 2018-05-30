@@ -11,7 +11,7 @@
   }*/
   
   .imgfondo{
-    background: url("../../../assets/imagenes/HeaderDesktop.jpg");
+    background: url("../../../assets/imagenes/hederult.png");
     background-repeat: no-repeat;
     padding: 9px 0px 21px 11px;
   }
@@ -63,7 +63,7 @@
   /*buscador header de la esquina*/
 .header-search-span {
     float: right;
-    width: 250px;
+    width: 212px;
     display: inline-block;
 }
 
@@ -107,4 +107,24 @@
     right: 0;
     border: 0;
     background: transparent;
+}
+
+/*ultimo*/
+.alineado-textico{
+  display: inline-flex;
+}
+
+.alineado-busqueda{
+  margin: -19px 1px 1px 1px;
+}
+
+@media (min-width: 320px) {
+  .texto-centro{
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .texto-centro{
+     display:block;
+  }
 }
