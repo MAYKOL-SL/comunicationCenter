@@ -353,3 +353,22 @@
     height: 21px;
     border-radius: 50%;
   }
+
+
+  /*todo lo responsibo aqui*/
+@media (min-width: 320px) {
+  .ancho-card{
+    width: auto;
+    right: auto;
+  }
+  
+}
+@media (min-width: 992px) {
+  .ancho-card{
+    width: 402px;
+    right: 25px;
+  }
+  
+}
+
+/*todo lo responsibo aqui fin */
