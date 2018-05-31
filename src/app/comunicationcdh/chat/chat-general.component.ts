@@ -71,12 +71,22 @@ export class ChatGeneralComponent{
 
     ngOnInit(){
         console.log(this.contact);
-        
+        $(function() {
+            $('#envoi').on('click', function(){
+                var message_text = $('#message-text').val();
+                if(message_text !== ''){
+                    $(".li:last").after('<ul id="mensajes"><li class="other"><a class="user"><img src= {{contact1.imagen}}></a><div class="date">10:30 am</div><div class="row"><div class="message"><p>'+message_text+'</p></div></div></li></ul>');
+                    $('#message-text').val('');
+                }
+            });
+        });
 
     }
-    public myFunction(id){
+    public myFunction(id,foto){
         $("span").remove('#'+id);
-        $(location).attr('href',"mensaje");
+        $("img").remove('#'+'foto-you');
+        $("img").add('#'+'foto-you');
+        //$(location).attr('href',"mensaje");
         console.log('#'+id);
     }
 }
