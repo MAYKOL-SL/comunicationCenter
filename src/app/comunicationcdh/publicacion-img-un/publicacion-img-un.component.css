@@ -20,8 +20,8 @@
  /* 4 columnas para grandes tablets*/
  @media (min-width: 992px) {
      .img-complet  {
-       width: 100%;
-       height: 337px;
+       width: 400px;
+       height: auto;
      }
  }
  
@@ -172,16 +172,6 @@
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
   }
   
-  @media (min-width: 320px) {
-      .search-form {
-        width: 288px;
-      }
-  }
-  @media (min-width: 992px) {
-      .search-form {
-        width: 350px;
-      }
-  }
   
   
   .search-input {
@@ -460,3 +450,34 @@
 }
 /*fin fooder modal*/
 
+/*aumentado el ancho del las publicaciones */
+.ancho-card{
+  width: 402px;
+  right: 25px;
+}
+
+/*aumentado el ancho del las publicaciones fin*/
+
+/*todo lo responsibo aqui*/
+@media (min-width: 320px) {
+  .search-form {
+    width: 288px;
+  }
+  .ancho-card{
+    width: auto;
+    right: auto;
+  }
+  
+}
+@media (min-width: 992px) {
+  .search-form {
+    width: 350px;
+  }
+  .ancho-card{
+    width: 402px;
+    right: 25px;
+  }
+  
+}
+
+/*todo lo responsibo aqui fin */
