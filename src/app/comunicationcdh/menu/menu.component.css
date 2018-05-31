@@ -25,11 +25,11 @@ div.cap.right {
 
 ul.osx-dock {
     display: inline-block;
-    height: 84px;
+    height: 90px;
     padding: 0 40px 0 0;
     /*background: url(../../../assets/images/Fooder.svg) no-repeat right bottom;*/
     overflow: hidden;
-    margin: 0 0 0 40px;
+    margin: -23px 0 0 40px;
 }
 
 ul.osx-dock li {
@@ -38,7 +38,7 @@ ul.osx-dock li {
     float: left;
     width: 55px;
     height: 50px;
-    margin: 0px 0 4px 0;
+    margin: 25px 0 4px 0;
 
     -webkit-transition: 0.15s linear;
     -moz-transition: 0.15s linear;
