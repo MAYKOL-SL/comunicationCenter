@@ -140,7 +140,8 @@
    }
    .contLike{
           padding: 0px 58px 0px 4px;
-          left: 15%;
+          left: 8%;
+          cursor: pointer;  
    }
    #p1{
      position: absolute;
@@ -148,7 +149,8 @@
  
    .contChat{
           padding: 0px 58px 1px 4px;
-          left: 25%;
+          left: 25%;  
+          cursor: pointer; 
           
    }
  
@@ -167,14 +169,19 @@
    }
    .contLike{
           padding: 0px 86px 0px 4px;
+          left: 8%;
+          cursor: pointer; 
    }
  
    .contChat{
           padding: 0px 73px 1px 4px;
+          left: 25%;  
+          cursor: pointer; 
    }
  
    .contShare{
           padding: 0px 2px 0px 4px;
+          left: 80%;          
    }
  }
  
