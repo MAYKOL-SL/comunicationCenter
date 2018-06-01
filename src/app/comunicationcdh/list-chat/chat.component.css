@@ -1,49 +1,55 @@
 .container{
-    position: fixed;
+    /*position: fixed;*/
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    max-height: 580px;
-    max-width: 400px;
-    min-height: 300px;
-    min-width: 280px;
+    height: 420px;/*alto*/
+    width: 310px;/*ancho*/
     
 }
 
 .card{
     box-shadow: 2px 2px 3px #ccc;
     border-radius: 10px;
+    height: auto;
+    width: auto;
 }
 
 .card-header{
-    max-height: 45px;
-    max-width: 400px;
-    min-height: 45px;
-    min-width: 300px;
-}
-.card-header button{
-    padding: none;
-    margin: -10px;
-    padding-left: -5px;
+    height: 35px;
+    width: auto;
 }
 
 .card-header h5{
-    color: #1BBCFE;
-    padding-left: 20px;
-    padding-top: 0px;
-    font-size: 15px;
+    position: absolute;
+    top: 1.5%;
     display: inline-block;
+    color: #1BBCFE;
+    left: 15%;
+    font-size: 15px;
 }
 
+.apunte{
+    position: absolute;
+    top: 2.5%;
+    display: inline-block;
+    color: #1BBCFE;
+    right: 5%;
+    font-size: 15px;
+}
 
 .card-header img{
     display: inline-block;
     margin-right: 0px;
+    margin-top: -20px;
     height: 30px;
     width: 20px;
 }
 
-
+.panel{
+    height: 325px;
+    width: auto;
+}
 #online-list{
     list-style-type:none;
     padding: 0px;
@@ -70,13 +76,18 @@
 #contact-list{
     overflow-y: scroll;
     overflow-x: hidden;
+    height: 325px;
+    width: auto;
 }
 
 #contact-list li{
+    height: 65px;
+    width: auto;
+    /*
     max-height: 65px;
     max-width: 380px;
     min-height: 60px;
-    min-width: 300px;
+    min-width: 300px;*/
 }
 
 #contact-list li:hover{

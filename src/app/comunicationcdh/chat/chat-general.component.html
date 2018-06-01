@@ -81,8 +81,8 @@
                         <div class="col-md-offset-3 col-md-4">
                             <div id="contact"><span class="fa fa-user" aria-hidden="true"></span></div>
                                     Nick
-                                </div>
-                            <div class="col-md-offset-3 col-md-4">
+                        </div>
+                        <div class="col-md-offset-3 col-md-4">
                             <div class="icon"><span class="fa fa-info-circle"></span></div>
                         </div>
                     </div>
@@ -91,41 +91,46 @@
                     <div class="date">
                         <span class="bold">Today</span> 11:54
                     </div>
-                <div class="row">
-                    <div class="message message-in pull-left">
-                        Hey! What's up?
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="message message-out pull-right">
-                        Good! And you?
-                    </div>
-                </div>
-                            <div class="row">
-                                <div class="message message-in pull-left">
-                                    Great! 
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="message message-out pull-right">
-                                    Still ok to go to the cinema ?
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-footer">
-                            <form>
-                                <div class="input-group">
-                                  <span class="input-group-btn">
-                                    <button data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-camera"></span></button>
-                                  </span>
-                                  <input id="message-text" type="text" class="form-control" placeholder="Message">
-                                  <span class="input-group-btn">
-                                    <button id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
-                                  </span>
-                                </div>
-                            </form>
+                    <div *ngFor="let mensaje of mensajes" class="row">
+                        <div class="message message-in pull-left">
+                            {{mensaje.mens}}
                         </div>
                     </div>
+                    <!--<div class="row">
+                        <div class="message message-in pull-left">
+                            Hey! What's up?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="message message-out pull-right">
+                            Good! And you?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="message message-in pull-left">
+                            Great! 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="message message-out pull-right">
+                            Still ok to go to the cinema ?
+                        </div>
+                    </div>-->
+                </div>
+                <div class="panel-footer">
+                    <form>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-camera"></span></button>
+                            </span>
+                            <input id="message-text" type="text" class="form-control" placeholder="Message">
+                            <span class="input-group-btn">
+                                <button id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                </div>
                     
                     <div class="modal" id="modal-photo">
                       <div class="modal-dialog">

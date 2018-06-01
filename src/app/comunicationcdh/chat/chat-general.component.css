@@ -2,12 +2,18 @@
     #derecha{
         display:none;
     }
+    #izquierda{
+        display: block;
+    }
   }
   
   
   @media screen and (max-width: 767px) {
     #derecha{
         display:none;
+    }
+    #izquierda{
+        display: block;
     }
   }
 .container{
@@ -58,6 +64,12 @@
     color: linear-gradient(to bottom right, #7EEEA5, #44D18D,  #1FA785);
 }
 /*chat*/
+#derecha{
+    padding: 0px;
+}
+#izquierda{
+    padding: 0px;
+}
 @media screen and (max-height: 1500px) and (min-height: 1367px) {
     #contact-list{
         height: 1370px;
@@ -349,13 +361,16 @@
 }
 .message-in {
     background-color: #E5E5EA;
-    margin-left: 20px;
+    position: relative;
+    margin-bottom: 10%;
+    left: 5%;
 
 }
 .message-out{
-    position: relative;
+    position: absolute;
     background-color : #22D351;
-    left: 65%;
+    margin-top: -8%; 
+    right: 5%;
     color: #FFFFFF;
 }
 
