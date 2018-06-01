@@ -1,12 +1,14 @@
 .container{    
     position: fixed;
-    top: 500px;
+    top: 45%;
     background-color: #FFFFFF;
-    border-radius: 10px;
-    max-height: 350px;
-    max-width: 300px;
-    min-height: 260px;
-    min-width: 280px;
+    border-radius: 5%;
+    min-height: 225px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 15%;
+    float: left;
 }
 form {
     display: inline-block;
@@ -14,8 +16,8 @@ form {
 
 .list {
     position: absolute;
-    top: 70px;
-    left: 10%;
+    top: 32%;
+    left: 5%;
 	font-family:"Trebuchet MS";
     font-size:20px;
 	color:#000000;
@@ -32,13 +34,24 @@ h5{
     height: 30px;
     border-block-end: 1px solid #EFF0F0;    
 }
-#text{
-    position: absolute;
-    left: 10%;
-    top: 40px;
-    border-radius: 5px;
-    border: 1px solid #74B6FF;
-}
+.col-3{float: left; 
+    width: 740px;
+    margin: 0px 0%; 
+    position: relative;}
+input[type="text"]{color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+:focus{outline: none;}
+.effect-1{border: 0; padding: 7px 0; border-bottom: 1px solid #ccc;}
+.effect-1 ~ .focus-border{
+    position: absolute; 
+    bottom: 0; 
+    left: 5%; 
+    width: 0; 
+    height: 2px; 
+    background-color: #74B6FF;
+    transition: 0.4s;}
+.effect-1:focus ~ .focus-border{
+    width: 90%; transition: 0.4s;}
+
 h1{
     position: absolute;
     color: #74B6FF;
@@ -46,7 +59,7 @@ h1{
     top: -13px;
     border-radius: 5px;
 }
-#add{
+/*#add{
     position: absolute;
     left: 75%;
     top: 40px;
@@ -54,8 +67,9 @@ h1{
     width: 25px;
     height: 25px;
     border-radius: 10px;
-    border: 1px solid #74B6FF;    
-}
+    border: 0px;  
+    cursor: pointer;
+}*/
 #img-add{
     position: absolute;
     left: 13%;
@@ -66,11 +80,71 @@ h1{
 
 #clear{
     position: absolute;
-    left: 85%;
+    left: 88%;
     top: 40px;
     background-color: #FFFFFF;
     width: 25px;
     height: 25px;
-    border: 1px solid #74B6FF;        
+    border: 0px;        
     border-radius: 10px;
+    cursor: pointer;    
 }
+#img-clear{
+    position: absolute;
+    left: 89%;
+    top: 42px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.btn {
+    position: absolute;
+    left: 75%;
+    top: 40px;
+    background-color: #FFFFFF;    
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    border: 0px;  
+    cursor: pointer;
+  }
+  
+  .btn-border-o {
+    background-color: transparent;
+  }
+  .btn-border-o:before, .btn-border-o:after {
+    content: '';
+    border-style: solid;
+    position: absolute;
+    z-index: 5;
+    border-radius: 10px;
+    box-sizing: content-box;
+  }
+  .btn-border-o:before {
+    width: 0;
+    height: 100%;
+    border-width: 1px 0 1px 0;
+    top: -1px;
+    left: 0;
+    transition-delay: 0.1s;
+  }
+  .btn-border-o:after {
+    width: 100%;
+    height: 0;
+    border-width: 0 1px 0 1px;
+    top: 0;
+    left: -1px;
+  }
+  .btn-border-o:hover:before {
+    width: 100%;
+  }
+  .btn-border-o:hover:after {
+    height: 100%;
+  }
+  .btn-border-o.btn-blue:before, .btn-border-o.btn-blue:after {
+    border-color: #3498db;
+  }
+ 
+  

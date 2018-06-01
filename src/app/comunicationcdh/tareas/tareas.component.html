@@ -1,18 +1,21 @@
 <div class="container">
-        <div class="row">
+    <div class="row">
             <div class="header">
                 <h5>To do list</h5>
-                <h1>+</h1>
             </div>
                 <form name="checkListForm">
-                    <input type="text" id="text" name="checkListItem" placeholder="Title..."/>
+                    <div class="col-3">
+                        <input class="effect-1" type="text" name="checkListItem" placeholder="Title....">
+                        <span class="focus-border"></span>
+                    </div>
                 </form>
-                 <button type="button" id="add">
-                 <img id="img-add" src="../../../assets/imagenes/iconos/add.png">
-                </button>
-                 <button type="button" id="clear" title="Clear checked items">-</button>
-                <br/><br/>
-                <div class="list"></div>
-            </div>
-        </div>
+                    <button class="btn btn-blue btn-border-o" type="button" id="add">
+                    <img id="img-add" src="../../../assets/images/Icons nuevos svg/SIGNATURE.svg">
+                    </button>
+                    <button type="button" class="btn btn-blue btn-border-o" id="clear" title="Clear checked items"></button>
+                    <img id="img-clear" src="../../../assets/images/Icons nuevos svg/DELETE_ON.svg">                    
+                    <br/><br/>
+                    <div class="list"></div>
+    </div>
+</div>
     

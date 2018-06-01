@@ -26,10 +26,9 @@ div.cap.right {
 ul.osx-dock {
     display: inline-block;
     height: 90px;
-    padding: 0 40px 0 0;
-    /*background: url(../../../assets/images/Fooder.svg) no-repeat right bottom;*/
+    padding: 0px 0px 0px 0px;
     overflow: hidden;
-    margin: -23px 0 0 40px;
+    margin: -24px 0px 0px 0px;
 }
 
 ul.osx-dock li {
