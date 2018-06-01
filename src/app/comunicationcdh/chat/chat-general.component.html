@@ -3,12 +3,12 @@
         <div class="col-12 row flex-nowrap justify-content-between align-items-center">
             <div class="col-6 pt-1 alineado-textico">
                 <a class="bordeicon">
-                    <span class="fa fa-bars fa-lg" data-toggle="modal" data-target="#exampleModal"></span>
+                    <span id="menu" class="menu fa fa-bars"></span>
                 </a>
                 <label class="titulo">Chat</label>
             </div>
             <div class="col-6 d-flex justify-content-end align-items-center">
-                <label class="apunte fa fa-pencil-square"></label>    
+                <label class="apunte fa fa-pencil-square-o"></label>    
                 <label class="buscar fa fa-search"></label>
                 <label class="notificacion fa fa-bell"></label>                    
             </div>
@@ -26,7 +26,7 @@
                 <div id="recent" class="tab-pane fade show active">
                     <ul id="contact-list" class="list-group" >
                         <li *ngFor="let contacto of contactos"  class="list-group-item " >
-                            <div (click)="myFunction(contacto.id)" class="row">
+                            <div (click)="myFunction(contacto.id,contacto.imagen)" class="row">
                                 <div class="col-3">
                                     <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
                                     <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
@@ -79,7 +79,8 @@
                             <div class="icon"><span class="fa fa-chevron-left"></span></div>
                         </div>
                         <div class="col-md-offset-3 col-md-4">
-                            <div id="contact"><span class="fa fa-user" aria-hidden="true"></span></div>
+                            <div id="contact"><img id="foto-perfil" src= {{contact1.imagen}} class="rounded-circle">
+                            </div>
                                     Nick
                         </div>
                         <div class="col-md-offset-3 col-md-4">
@@ -92,7 +93,10 @@
                         <span class="bold">Today</span> 11:54
                     </div>
                     <div *ngFor="let mensaje of mensajes" class="row">
-                        <div class="message message-in pull-left">
+                        <div *ngIf="mensaje.val == false" class="message message-in">
+                            {{mensaje.mens}}
+                        </div>
+                        <div *ngIf="mensaje.val == true" class="message message-out">
                             {{mensaje.mens}}
                         </div>
                     </div>

@@ -28,11 +28,11 @@
     background: url("../../../assets/imagenes/hederult.png");
     background-repeat: no-repeat;
     padding: 9px 0px 21px 11px;
-}
+}/*
 .bordeicon{
     padding: 5px 18px 4px 7px;
-}
-.fa-bars{
+}*/
+.bordeicon span{
     font-size: 20px;
     position: relative;
     color: #319AF2;
@@ -266,8 +266,9 @@
 
 .row{
     margin: 0px;
+    
 }
-.row span{
+.row .badge{
     
     margin: 0;
     font-size: 10px;
@@ -327,18 +328,21 @@
 }
 
 .fa-chevron-left, .fa-info-circle{
-    size: 60px;
+    font-size: 30px;
     color: #37A7FD;
 }
 .fa-user{
     font-size: 40px;
     color: #FFFFFF;
 }
-
+.panel-heading{
+    border-top: 1px solid #ccc;
+}
 .panel-body{
     max-height: 1400px;   
     overflow-y: scroll;
     background-color: white;
+    position: relative;
 }
 
 .date{
@@ -353,6 +357,7 @@
 
 
 .message{
+    position: relatives;
     font-size: 1.2em;
     max-width:300px;
     border-radius: 15px;
@@ -361,19 +366,18 @@
 }
 .message-in {
     background-color: #E5E5EA;
-    position: relative;
-    margin-bottom: 10%;
-    left: 5%;
-
+    
 }
 .message-out{
-    position: absolute;
-    background-color : #22D351;
-    margin-top: -8%; 
-    right: 5%;
-    color: #FFFFFF;
+    background-color : #DDFFDD;
+    right: 50%;
 }
 
 .fa-camera, .fa-send{
     color: #848484;
+}
+#contact img{
+    height: 50px;
+    width: auto;
+    margin: -5px;
 }

@@ -84,6 +84,7 @@ export class ChatGeneralComponent{
     }
     public myFunction(id,foto){
         $("span").remove('#'+id);
+        $("#foto-perfil").attr("src",foto);
         //$(location).attr('href',"mensaje");
         console.log('#'+id);
     }
