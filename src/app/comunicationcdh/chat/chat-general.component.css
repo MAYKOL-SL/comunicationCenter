@@ -1,6 +1,9 @@
 @media screen and (max-width: 992px) and (min-width: 769px) {
-    #derecha1{
+    #derecha{
         display:none;
+    }
+    #izquierda{
+        display: block;
     }
   }
   
@@ -9,353 +12,104 @@
     #derecha{
         display:none;
     }
+    #izquierda{
+        display: block;
+    }
   }
-
-
-#izquierda{
+.container{
+    margin-top: -55px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 0px;
+    max-width: 1600px;
+    max-height: auto;
 }
+.imgfondo{
+    background: url("../../../assets/imagenes/hederult.png");
+    background-repeat: no-repeat;
+    padding: 9px 0px 21px 11px;
+}/*
+.bordeicon{
+    padding: 5px 18px 4px 7px;
+}*/
+.bordeicon span{
+    font-size: 20px;
+    position: relative;
+    color: #319AF2;
+}
+.notificacion{
+    font-size: 20px;
+    position: relative;
+    padding-left: 30px;
+    top: 5px;
+    color: #319AF2;
+}
+.buscar{
+    font-size: 20px;
+    position: relative;
+    padding-left: 30px;
+    top: 5px;
+    color: #319AF2;
+}
+.apunte{
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    color: #319AF2;
+}
+.titulo{
+    font-size: 23px;
+    position: relative;
+    color: #4ECB96;
+    color: linear-gradient(to bottom right, #7EEEA5, #44D18D,  #1FA785);
+}
+/*chat*/
 #derecha{
     padding: 0px;
 }
-.container{
-    padding-top: -56px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-top: -56px;
-    max-width: 1600px;
+#izquierda{
+    padding: 0px;
 }
-
-/*
-menu
-*/
-  input {
-    display: none;
-  }
-  ul {
-    padding: 0;
-  }
-  li {
-    list-style-type: none;
-  }
-  /*tamano*/
-
-  .c-mobile-view {
-    position: relative;
-    margin: 0px;
-    max-width: auto;
-    max-height: auto;
-    background-position: bottom;
-    background-size: cover;
-    opacity: 0;
-    animation-name: animation-fadein;
-    animation-duration: 0.5s;
-    animation-delay: 0.1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-animation-name: animation-fadein;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-delay: 0.1s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-  }
-  .c-mobile-view__inner {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-  }
-  
-  
-  .c-mobile__topbar {
-    
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 10%;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-    -webkit-border-radius: 0 0 0% 50%;
-    -moz-border-radius: 0 0 0% 50%;
-    border-radius: 0% 0% 0% 50%;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    background-color: #44D18D;
-    background: linear-gradient(to bottom right, #7EEEA5, #44D18D,  #1FA785);
-    background: -prefix-linear-gradient(left top, #7EEEA5, #44D18D, #1FA785);
-    box-shadow: 0px 10px 20px #BABABB;
-    /*
-    background: linear-gradient(to bottom right, #871cde, #5873fe);
-    background: -prefix-linear-gradient(left top, #871cde, #5873fe);
-    */
-  }
-  .c-mobile__topbar a {
-    text-decoration: none;
-    color: #FFF;
-    letter-spacing: 3px;
-    font-size: 20px;
-    z-index: 1;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-  }
-  .c-mobile__topbar a:hover {
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-    color: #ecc54d;
-  }
-  .c-mobile__topbar ul {
-    text-align: left;
-    padding-top: 40px;
-    padding-left: 40%;
-  }
-  .c-mobile__topbar li {
-    margin: 30px 30px 40px 0;
-  }
-  input[name=u-topbar__button]:checked ~ .c-mobile-view__inner .c-mobile__topbar {
-    height: 50%;
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.6s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-  }
-  .c-topbar__button--titulo {
-    font-size: 20px;
-    position: absolute;
-    left: 50px;
-    top: 9px;
-    z-index: 1;
-    color: #FFF;
-  }
-  .c-topbar__button--menu {
-    position: absolute;
-    left: 25px;
-    top: 15px;
-    z-index: 1;
-    color: #FFF;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-  }
-  .c-topbar__button--close {
-    position: absolute;
-    left: 25px;
-    top: 15px;
-    z-index: 1;
-    cursor: pointer;
-    color: #FFF;
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-  }
-  .c-topbar__button--notificacion {
-    font-size: 20px;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    z-index: 1;
-    color: #FFF;
-  }
-  .c-topbar__button--apunte {
-    font-size: 20px;
-    position: absolute;
-    right: 60px;
-    top: 15px;
-    z-index: 1;
-    color: #FFF;
-  }
-  .c-topbar__button--buscar {
-    font-size: 20px;
-    position: absolute;
-    right: 100px;
-    top: 15px;
-    z-index: 1;
-    color: #FFF;
-  }
-  input[name=u-topbar__button]:checked ~ .c-mobile-view__inner .c-topbar__button--notificacion {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.6s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-  }
-  input[name=u-topbar__button]:checked ~ .c-mobile-view__inner .c-topbar__button--buscar {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.6s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-  }
-  input[name=u-topbar__button]:checked ~ .c-mobile-view__inner .c-topbar__button--apunte{
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.6s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-  }
-  input[name=u-topbar__button]:checked ~ .c-mobile-view__inner .c-topbar__button--titulo {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.6s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-  }
-  input[name=u-topbar__button]:checked ~ .c-mobile-view__inner .c-topbar__button--menu {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.6s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-  }
-  input[name=u-topbar__button]:checked ~ .c-mobile-view__inner .c-topbar__button--close {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.6s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-delay: 0;
-  }
-  .c-switcher__button {
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    color: #FFF;
-  }
-  
-  @keyframes animation-fadein {
-    from {
-      transform: scale(0);
-      opacity: 0;
-    }
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  #izquierda{
-    padding-top: 5px;
-  }
-  #derecha{
-    padding-top: 5px;
-  }
-  /*chat*/
-  @media screen and (max-height: 1500px) and (min-height: 1367px) {
+@media screen and (max-height: 1500px) and (min-height: 1367px) {
     #contact-list{
-        height: 1400px;
+        height: 1370px;
     } 
     #activo-list{
-       height: 1400px;
+       height: 1370px;
        }
-       .chat ul{
-        height: 1360px;
-    }
-       .c-mobile-view{
-        height: 1500px;
+       .panel-body{
+        height: 1300px;
+      }
+      #derecha{
+        height: 1400px;
       }
 }
   @media screen and (max-height: 1366px) and (min-height: 1025px) {
     #contact-list{
-        height: 1200px;
+        height: 1170px;
     } 
     #activo-list{
-       height: 1200px;
+       height: 1170px;
        }
-       .chat ul{
+    .panel-body{
         height: 1050px;
-    }
-       .c-mobile-view{
-        height: 1250px;
+      }
+      #derecha{
+        height: 1150px;
       }
 }
 @media screen and (max-height: 1024px) and (min-height: 824px) {
     #contact-list{
-        height: 900px;
+        height: 770px;
     } 
     #activo-list{
-       height: 900px;
+       height: 770px;
     }
-    .chat ul{
-      height: 800px;
+    .panel-body{
+        height: 700px;
     }
-       .c-mobile-view{
-        height: 1000px;
+       #derecha{
+        height: 800px;
       }
 }
 @media screen and (max-height: 823px) and (min-height: 737px) {
@@ -365,11 +119,11 @@ menu
     #activo-list{
        height: 640px;
     }
-    .chat ul{
-      height: 600px;
-    }
-       .c-mobile-view{
-        height: 740px;
+       .panel-body{
+        height: 540px;
+      }
+      #derecha{
+        height: 640px;
       }
 }
 @media screen and (max-height: 736px) and (min-height: 668px) {
@@ -379,11 +133,11 @@ menu
     #activo-list{
        height: 570px;
     }
-    .chat ul{
-      height: 530px;
-    }
-       .c-mobile-view{
-        height: 670px;
+       .panel-body{
+        height: 470px;
+      }
+      #derecha{
+        height: 570px;
       }
 }
 @media screen and (max-height: 667px) and (min-height: 641px) {
@@ -393,25 +147,25 @@ menu
     #activo-list{
        height: 500px;
     }
-    .chat ul{
-      height: 460px;
-    }
-       .c-mobile-view{
-        height: 600px;
+       .panel-body{
+        height: 400px;
+      }
+      #derecha{
+        height: 500px;
       }
 }
 @media screen and (max-height: 640px) and (min-height: 569px) {
     #contact-list{
-        height: 470px;
+        height: 450px;
     } 
     #activo-list{
-       height: 470px;
+       height: 450px;
     }
-    .chat ul{
-      height: 430px;
-    }
-       .c-mobile-view{
-        height: 570px;
+       .panel-body{
+        height: 350px;
+      }
+      #derecha{
+        height: 450px;
       }
 }
 @media screen and (max-height: 568px) and (min-height: 361) {
@@ -421,11 +175,11 @@ menu
     #activo-list{
        height: 400px;
     }
-    .chat ul{
-      height: 360px;
-    }
-       .c-mobile-view{
-        height: 500px;
+       .panel-body{
+        height: 300px;
+      }
+      #derecha{
+        height: 400px;
       }
 }
 @media screen and (max-height: 360px) {
@@ -435,12 +189,12 @@ menu
  #activo-list{
     height: 200px;
   }
-  .chat ul{
-    height: 160px;
-}
-  .c-mobile-view{
-    height: 300px;
+  .panel-body{
+    height: 100px;
   }
+  #derecha{
+        height: 200px;
+      }
     
 }
 
@@ -512,8 +266,9 @@ menu
 
 .row{
     margin: 0px;
+    
 }
-.row span{
+.row .badge{
     
     margin: 0;
     font-size: 10px;
@@ -547,166 +302,82 @@ menu
     padding-top: -100px;
     margin-top: -100px;
 }
-/*mensajes*/
-
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #ccc; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #275; 
-}
-  section {
-    min-width: 320px;
-    min-height: auto;
-    margin-bottom: 60px;
-    background-color: #fff;
-    padding: 10px 15px 20px 15px;
-    border-radius: 10px;
-  }
-  
-  .chat ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow: auto;
-  }
-  
-  .chat ul li {
-    margin: 45px 0 0 0;
-    font-weight: 500;
-  }
-  .chat ul li a.user {
-    margin: -30px 0 0 0;
-    display: block;
-    color: #333;
-  }
-  .chat ul li a.user img {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    background-color: #f3f3f3;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  }
-  .chat ul li .date {
-    font-size: 14px;
-    color: #a6a6a6;
-  }
-  .chat ul li{
+#chat{
     position: relative;
-    padding-top: 15px;
-  }
-  .chat ul .other .message {
-    display: block;
-    padding: 10px;
-    position: absolute;
-    color: #5D5D5D;
-    font-size: 15px;
-    background-color: #F8F8FA;
-    border-radius: 3px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    right: 15px;
-  }
-  .chat ul .you .message {
-    display: block;
-    padding: 10px;
-    position: absolute;
-    color: #5D5D5D;
-    font-size: 15px;
-    background-color: #F8F8FA;
-    border-radius: 3px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    left: 15px;
-  }
-  .chat ul li .message:before {
-    content: "";
-    position: absolute;
-    border-top: 16px solid rgba(0, 0, 0, 0.15);
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-  }
-  .chat ul li .message:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    border-top: 17px solid #F8F8FA;
-    border-left: 17px solid transparent;
-    border-right: 17px solid transparent;
-  }
-  
-  .chat ul li .message p {
-    margin: 0;
-    padding: 0;
-    transition: all 0.1s;
-  }
-  .chat ul li.other a.user {
-    float: right;
-  }
-  .chat ul li.other .date {
-    float: right;
-    margin: -20px 10px 0 0;
-  }
-  .chat ul li.other .message {
-    margin: 0 90px 0 0;
-  }
-  .chat ul li.other .message:before {
-    margin: -9px -16px 0 0;
-    right: 0;
-  }
-  .chat ul li.other .message:after {
-    content: "";
-    right: 0;
-    margin: 0 -15px 0 0;
-  }
-  .chat ul li.you a.user {
-    float: left;
-  }
-  .chat ul li.you .date {
-    float: left;
-    margin: -20px 0 0 10px;
-  }
-  .chat ul li.you .message {
-    margin: 0 0 0 90px;
-  }
-  .chat ul li.you .message:before {
-    margin: -9px 0 0 -16px;
-    left: 0;
-  }
-  .chat ul li.you .message:after {
-    content: "";
-    left: 0;
-    margin: 0 0 0 -15px;
-  }
-  .fa-send, .fa-camera{
-    color: #848484;
+    padding-top: 100px;
+}
+/*mensaje nuevo*/
+.panel{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.icon{
+    height: 70px;
+    padding-top:23px;
+    
+}
+#contact{
+    width: 50px;
+    height: 50px;
+    margin:auto;
+    padding:7px 8px 7px 8px;
+    background-color :#A4A4A4;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.fa-chevron-left, .fa-info-circle{
+    font-size: 30px;
+    color: #37A7FD;
+}
+.fa-user{
     font-size: 40px;
-    height: 30px;
-    padding-top:10px;
+    color: #FFFFFF;
 }
-.panel-footer{
-  padding-bottom: -10px;
+.panel-heading{
+    border-top: 1px solid #ccc;
 }
-#message-text{
-  display: block;
-    font-size: 25px;
+.panel-body{
+    max-height: 1400px;   
+    overflow-y: scroll;
+    background-color: white;
+    position: relative;
+}
+
+.date{
+    color: #A4A4A4;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.message{
+    position: relatives;
+    font-size: 1.2em;
+    max-width:300px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.message-in {
+    background-color: #E5E5EA;
+    
+}
+.message-out{
+    background-color : #DDFFDD;
+    right: 50%;
+}
+
+.fa-camera, .fa-send{
+    color: #848484;
+}
+#contact img{
+    height: 50px;
     width: auto;
-    max-width:800px;
-    padding: 0px;
-    margin-bottom: 0px;
-}
-.btn-default{
-  background-color: #fff;
-  border-color: #ccc;
+    margin: -5px;
 }

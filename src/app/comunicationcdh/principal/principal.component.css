@@ -24,6 +24,11 @@
   }
 }
 
+#derecha{
+  position: relative;
+  left: 2%;
+}
+
 .pad{
   padding: 1px 46px 1px 38px;
 }

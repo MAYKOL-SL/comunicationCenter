@@ -1,0 +1,127 @@
+<!--<dh-header></dh-header>
+
+<div class="espaciado">
+  
+   Page Content -->
+
+<div class="container">
+  <div class="c-mobile-view">
+    <input type="checkbox" id="u-topbar__button" name="u-topbar__button">
+    <div class="c-mobile-view__inner">
+      <div class="c-mobile__topbar">
+        <label for="u-topbar__butto" class="c-button c-topbar__button--titulo ">Chat</label>
+        <label for="u-topbar__butto" class="c-button c-topbar__button--notificacion fa fa-bell"></label>
+        <label for="u-topbar__butto" class="c-button c-topbar__button--buscar fa fa-search"></label>
+        <label for="u-topbar__butto" class="c-button c-topbar__button--apunte fa fa-pencil-square"></label>
+        <label for="u-topbar__button" class="c-button c-topbar__button--menu fa fa-bars"></label>
+        <label for="u-topbar__button" class="c-button c-topbar__button--close fa fa-times"></label>
+        <ul>
+          <li><a href="" class="u-link__effect">Perfil</a></li>
+          <li><a href="" class="u-link__effect">Calendario</a></li>
+          <li><a href="" class="u-link__effect">Correo</a></li>
+        </ul>
+      </div>
+      <div class="row">
+          <div id="izquierda" class="c-button c-topbar__button--izquierda col-12 col-sm-12 col-md-4 ">
+            <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-recent-tab" data-toggle="tab" href="#recent" role="tab" aria-controls="nav-recent" aria-selected="true">RECENT</a>
+                  <a class="nav-item nav-link" id="nav-active-tab" data-toggle="tab" href="#active" role="tab" aria-controls="nav-active" aria-selected="false">ACTIVE</a>
+                </div>
+            </nav>
+          <div class="tab-content">
+              <div id="recent" class="tab-pane fade show active">
+                  <ul id="contact-list" class="list-group" >
+                      <li *ngFor="let contacto of contactos"  class="list-group-item " >
+                          <div (click)="myFunction(contacto.id)" class="row">
+                               <div class="col-3">
+                                  <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
+                                  <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
+                                    <circle cx="35" cy="8" r="3.5" stroke="white" stroke-width="1" fill="#98E600" />
+                                  </svg>
+                                </div>
+                                <div  class="col-6">
+                                  <a class="text-sm-left">{{contacto.nombre}}</a>
+                                  <p class="text-secondary" aria-hidden="true">{{contacto.mensaje}}</p>
+                                </div>
+                                <div class="col-3">
+                                  <p class="text-secondary">9:12 pm</p>
+                                  <span *ngIf="contacto.aviso == true" id = {{contacto.id}} class="badge badge-primary badge-pill">1</span>
+                                </div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </li>
+                  </ul>
+              </div>
+              <div id="active" class="tab-pane fade">
+                  <ul id="activo-list" class="list-group" >
+                      <li *ngFor="let activo of active"  class="list-group-item " >
+                          <div (click)="myFunction(activo.id,activo.imagen)" class="row">
+                               <div class="col-3">
+                                  <img id="foto-contacto" src = {{activo.imagen}}  class="rounded-circle" />
+                                  <svg *ngIf="activo.estado == true" id="estado" height="60" width="60">
+                                    <circle cx="35" cy="8" r="3.5" stroke="white" stroke-width="1" fill="#98E600" />
+                                  </svg>
+                                </div>
+                                <div  class="col-6">
+                                  <a class="text-sm-left">{{activo.nombre}}</a>
+                                  <p class="text-secondary" aria-hidden="true">{{activo.mensaje}}</p>
+                                </div>
+                                <div class="col-3">
+                                  <p class="text-secondary">9:12 pm</p>
+                                  <span *ngIf="activo.aviso == true" id = {{activo.id}} class="badge badge-primary badge-pill">1</span>
+                                </div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+          <div id="derecha" class="col-12 col-sm-12 col-md-8 ">
+            <!--<mensaje></mensaje>-->
+            <section id="mens">
+              <div class="chat">
+                <ul id="mensajes">
+                  <li *ngFor="let mensaje of mensajes" class= {{mensaje.escritor}}>
+                    <a *ngIf="mensaje.val == false" class="user" ><img id="foto-other" alt="" src= {{contact1.imagen}} ></a>
+                    <a *ngIf="mensaje.val == true" class="user" ><img id="foto-you" alt="" src= {{contact2.imagen}} ></a>
+                    <div class="date">
+                      {{mensaje.time}}
+                    </div>
+                    <div class="row">
+                    <div class="message">
+                      <p>
+                        {{mensaje.mens}}
+                      </p>
+                    </div>
+                  </div>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+              <div class="panel-footer">
+                <form>
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <button data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-camera"></span></button>
+                      </span>
+                      <input id="message-text" type="text" name="mensaje" class="form-control" placeholder="Message">
+                      <span class="input-group-btn">
+                        <button id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
+                      </span>
+                    </div>
+                </form>
+            </div>
+            
+            </section>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <!-- /.container
+<dh-menu></dh-menu>-->
+
+  
