@@ -1,232 +1,150 @@
-<!--<dh-header></dh-header>
-
-<div class="espaciado">
-  
-   Page Content -->
-
 <div class="container">
-  <div class="c-mobile-view">
-    <!-- CONTROLLERS -->
-    <input type="checkbox" id="u-topbar__button" name="u-topbar__button">
-    <!-- MOBILE VIEW CONTAINER -->
-    <div class="c-mobile-view__inner">
-      <!-- TOPBAR -->
-      <div class="c-mobile__topbar">
-        <label for="u-topbar__butto" class="c-button c-topbar__button--titulo ">Chat</label>
-        <label for="u-topbar__butto" class="c-button c-topbar__button--notificacion fa fa-bell"></label>
-        <label for="u-topbar__butto" class="c-button c-topbar__button--buscar fa fa-search"></label>
-        <label for="u-topbar__butto" class="c-button c-topbar__button--apunte fa fa-pencil-square"></label>
-        <label for="u-topbar__button" class="c-button c-topbar__button--menu fa fa-bars"></label>
-        <label for="u-topbar__button" class="c-button c-topbar__button--close fa fa-times"></label>
-        <ul>
-          <li><a href="" class="u-link__effect">Perfil</a></li>
-          <li><a href="" class="u-link__effect">Calendario</a></li>
-          <li><a href="" class="u-link__effect">Correo</a></li>
-        </ul>
-      </div>
-      <div class="row">
-          <div id="izquierda" class="c-button c-topbar__button--izquierda col-12 col-sm-12 col-md-4 ">
-            <!--<contactos></contactos>-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top imgfondo">
+        <div class="col-12 row flex-nowrap justify-content-between align-items-center">
+            <div class="col-6 pt-1 alineado-textico">
+                <a class="bordeicon">
+                    <span class="fa fa-bars fa-lg" data-toggle="modal" data-target="#exampleModal"></span>
+                </a>
+                <label class="titulo">Chat</label>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <label class="apunte fa fa-pencil-square"></label>    
+                <label class="buscar fa fa-search"></label>
+                <label class="notificacion fa fa-bell"></label>                    
+            </div>
+        </div>
+    </nav>
+    <div id="chat" class="row">
+        <div id="izquierda" class="col-12 col-sm-12 col-md-5 izquierda">
             <nav>
                 <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-recent-tab" data-toggle="tab" href="#recent" role="tab" aria-controls="nav-recent" aria-selected="true">RECENT</a>
-                  <a class="nav-item nav-link" id="nav-active-tab" data-toggle="tab" href="#active" role="tab" aria-controls="nav-active" aria-selected="false">ACTIVE</a>
+                    <a class="nav-item nav-link active" id="nav-recent-tab" data-toggle="tab" href="#recent" role="tab" aria-controls="nav-recent" aria-selected="true">RECENT</a>
+                    <a class="nav-item nav-link" id="nav-active-tab" data-toggle="tab" href="#active" role="tab" aria-controls="nav-active" aria-selected="false">ACTIVE</a>
                 </div>
             </nav>
-          <div class="tab-content">
-              <div id="recent" class="tab-pane fade show active">
-                  <ul id="contact-list" class="list-group" >
-                      <li *ngFor="let contacto of contactos"  class="list-group-item " >
-                          <div (click)="myFunction(contacto.id)" class="row">
-                               <div class="col-3">
-                                  <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
-                                  <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
-                                    <circle cx="35" cy="8" r="3.5" stroke="white" stroke-width="1" fill="#98E600" />
-                                  </svg>
+            <div class="tab-content">
+                <div id="recent" class="tab-pane fade show active">
+                    <ul id="contact-list" class="list-group" >
+                        <li *ngFor="let contacto of contactos"  class="list-group-item " >
+                            <div (click)="myFunction(contacto.id)" class="row">
+                                <div class="col-3">
+                                    <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
+                                    <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
+                                        <circle cx="35" cy="8" r="3.5" stroke="white" stroke-width="1" fill="#98E600" />
+                                    </svg>
                                 </div>
                                 <div  class="col-6">
-                                  <a class="text-sm-left">{{contacto.nombre}}</a>
-                                  <p class="text-secondary" aria-hidden="true">{{contacto.mensaje}}</p>
+                                    <a class="text-sm-left">{{contacto.nombre}}</a>
+                                    <p class="text-secondary" aria-hidden="true">{{contacto.mensaje}}</p>
                                 </div>
                                 <div class="col-3">
-                                  <p class="text-secondary">9:12 pm</p>
-                                  <span *ngIf="contacto.aviso == true" id = {{contacto.id}} class="badge badge-primary badge-pill">1</span>
+                                    <p class="text-secondary">9:12 pm</p>
+                                    <span *ngIf="contacto.aviso == true" id = {{contacto.id}} class="badge badge-primary badge-pill">1</span>
                                 </div>
                                 <div class="clearfix"></div>
-                              </div>
-                            </li>
-                  </ul>
-              </div>
-              <div id="active" class="tab-pane fade">
-                  <ul id="activo-list" class="list-group" >
-                      <li *ngFor="let activo of active"  class="list-group-item " >
-                          <div (click)="myFunction(activo.id,activo.imagen)" class="row">
-                               <div class="col-3">
-                                  <img id="foto-contacto" src = {{activo.imagen}}  class="rounded-circle" />
-                                  <svg *ngIf="activo.estado == true" id="estado" height="60" width="60">
-                                    <circle cx="35" cy="8" r="3.5" stroke="white" stroke-width="1" fill="#98E600" />
-                                  </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="active" class="tab-pane fade">
+                    <ul id="activo-list" class="list-group" >
+                        <li *ngFor="let activo of active"  class="list-group-item " >
+                            <div (click)="myFunction(activo.id,activo.imagen)" class="row">
+                                <div class="col-3">
+                                    <img id="foto-contacto" src = {{activo.imagen}}  class="rounded-circle" />
+                                    <svg *ngIf="activo.estado == true" id="estado" height="60" width="60">
+                                        <circle cx="35" cy="8" r="3.5" stroke="white" stroke-width="1" fill="#98E600" />
+                                    </svg>
                                 </div>
                                 <div  class="col-6">
-                                  <a class="text-sm-left">{{activo.nombre}}</a>
-                                  <p class="text-secondary" aria-hidden="true">{{activo.mensaje}}</p>
+                                    <a class="text-sm-left">{{activo.nombre}}</a>
+                                    <p class="text-secondary" aria-hidden="true">{{activo.mensaje}}</p>
                                 </div>
                                 <div class="col-3">
-                                  <p class="text-secondary">9:12 pm</p>
-                                  <span *ngIf="activo.aviso == true" id = {{activo.id}} class="badge badge-primary badge-pill">1</span>
+                                    <p class="text-secondary">9:12 pm</p>
+                                    <span *ngIf="activo.aviso == true" id = {{activo.id}} class="badge badge-primary badge-pill">1</span>
                                 </div>
                                 <div class="clearfix"></div>
-                              </div>
-                            </li>
-                  </ul>
-              </div>
-          </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-          <div id="derecha" class="col-12 col-sm-12 col-md-8 ">
-            <!--<mensaje></mensaje>-->
-            <section id="mens">
-              <div class="chat">
-                <ul id="mensajes">
-                  <li *ngFor="let mensaje of mensajes" class= {{mensaje.escritor}}>
-                    <a *ngIf="mensaje.val == false" class="user" ><img id="foto-other" alt="" src= {{contact1.imagen}} ></a>
-                    <a *ngIf="mensaje.val == true" class="user" ><img id="foto-you" alt="" src= {{contact2.imagen}} ></a>
-                    <div class="date">
-                      {{mensaje.time}}
-                    </div>
+        <div id="derecha" class="col-12 col-sm-12 col-md-7 derecha">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
                     <div class="row">
-                    <div class="message">
-                      <p>
-                        {{mensaje.mens}}
-                      </p>
+                        <div class="col-md-4">
+                            <div class="icon"><span class="fa fa-chevron-left"></span></div>
+                        </div>
+                        <div class="col-md-offset-3 col-md-4">
+                            <div id="contact"><span class="fa fa-user" aria-hidden="true"></span></div>
+                                    Nick
+                                </div>
+                            <div class="col-md-offset-3 col-md-4">
+                            <div class="icon"><span class="fa fa-info-circle"></span></div>
+                        </div>
                     </div>
-                  </div>
-                  </li>
-                  
-                </ul>
-                
-              </div>
-              <div class="panel-footer">
-                <form>
-                    <div class="input-group">
-                      <span class="input-group-btn">
-                        <button data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-camera"></span></button>
-                      </span>
-                      <input id="message-text" type="text" name="mensaje" class="form-control" placeholder="Message">
-                      <span class="input-group-btn">
-                        <button id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
-                      </span>
+                </div>
+                <div class="panel-body">
+                    <div class="date">
+                        <span class="bold">Today</span> 11:54
                     </div>
-                </form>
-            </div>
-            
-            </section>
-            <!--
-            -->
-            <!--
-<section id="mens">
-    <div class="chat">
-      <ul id="mensajes">
-        <li class="other">
-          <a class="user" href="#"><img alt="" src= {{contact1.imagen}} /></a>
-          <div class="date">
-            2 minutes ago
-          </div>
-          <div class="message">
-            <div class="hider">
-              <span>Click to read</span>
-            </div>
-            <p>
-              Itaque quod et dolore accusantium. Labore aut similique ab voluptas rerum quia. Reprehenderit voluptas doloribus ut nam tenetur ipsam.
-            </p>
-          </div>
-        </li>
-        <li class="other">
-          <a class="user" href="#"><img alt="" src= {{contact1.imagen}} /></a>
-          <div class="date">
-            5 minutes ago
-          </div>
-          <div class="message">
-            <p>
-              Modi ratione aliquid non. Et porro deserunt illum sed velit necessitatibus. Quis fuga et et fugit consequuntur. Et veritatis fugiat veniam pariatur maxime iusto aperiam.
-            </p>
-          </div>
-        </li>
-        <li class="you">
-          <a class="user" href="#"><img alt="" src= {{contact2.imagen}} /></a>
-          <div class="date">
-            7 minutes ago
-          </div>
-          <div class="message">
-            <p>
-              Provident impedit atque nemo culpa et modi molestiae. Error non dolorum voluptas non a. Molestiae et nobis nisi sed.
-            </p>
-          </div>
-        </li>
-        <li class="other">
-          <a class="user" href="#"><img alt="" src= {{contact1.imagen}} /></a>
-          <div class="date">
-            8 minutes ago
-          </div>
-          <div class="message">
-            <p>
-              Id vel ducimus perferendis fuga excepturi nulla. Dolores dolores amet et laborum facilis. Officia magni ut non autem et qui incidunt. Qui similique fugit vero porro qui cupiditate.
-            </p>
-          </div>
-        </li>
-        <li class="you">
-          <a class="user" href="#"><img alt="" src= {{contact2.imagen}} /></a>
-          <div class="date">
-            10 minutes ago
-          </div>
-          <div class="message">
-            <div class="hider">
-              <span>Click to read</span>
-            </div>
-            <p>
-              Provident impedit atque nemo culpa et modi molestiae. Error non dolorum voluptas non a. Molestiae et nobis nisi sed.
-            </p>
-          </div>
-        </li>
-        <li class="you">
-          <a class="user" href="#"><img alt="" src= {{contact2.imagen}} /></a>
-          <div class="date">
-            10 minutes ago
-          </div>
-          <div class="message">
-            <div class="hider">
-              <span>Click to read</span>
-            </div>
-            <p>
-              Est ut at eum sed perferendis ea hic. Tempora perspiciatis magnam aspernatur explicabo ea. Sint atque quod.
-            </p>
-          </div>
-        </li>
-      </ul>
-      
-    </div>
-  </section>-->
-          </div>
+                <div class="row">
+                    <div class="message message-in pull-left">
+                        Hey! What's up?
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="message message-out pull-right">
+                        Good! And you?
+                    </div>
+                </div>
+                            <div class="row">
+                                <div class="message message-in pull-left">
+                                    Great! 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="message message-out pull-right">
+                                    Still ok to go to the cinema ?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <form>
+                                <div class="input-group">
+                                  <span class="input-group-btn">
+                                    <button data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-camera"></span></button>
+                                  </span>
+                                  <input id="message-text" type="text" class="form-control" placeholder="Message">
+                                  <span class="input-group-btn">
+                                    <button id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
+                                  </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="modal" id="modal-photo">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">x</button>
+                                <h4 class="modal-title">Envoyer une photo</h4>
+                            </div>
+                            <div class="modal-body">
+                                <input type="file" name ="photo" id="photo" accept="image/*">
+                            </div>
+                            <div class="modal-footer">
+                                <button id="validation" class="btn btn-primary">Envoyer</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
         </div>
     </div>
-  </div>
-  <div class="modal" id="modal-photo">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">x</button>
-                <h4 class="modal-title">Envoyer une photo</h4>
-            </div>
-            <div class="modal-body">
-                <input type="file" name ="photo" id="photo" accept="image/*">
-            </div>
-            <div class="modal-footer">
-                <button id="validation" class="btn btn-primary">Envoyer</button>
-            </div>
-        </div>
-      </div>
-    </div>
-</div>
-  <!-- /.container
+</div><!--
 <dh-menu></dh-menu>-->
-
-  

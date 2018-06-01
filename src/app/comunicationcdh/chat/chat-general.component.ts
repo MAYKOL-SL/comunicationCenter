@@ -75,7 +75,7 @@ export class ChatGeneralComponent{
             $('#envoi').on('click', function(){
                 var message_text = $('#message-text').val();
                 if(message_text !== ''){
-                    $(".li:last").after('<ul id="mensajes"><li class="other"><a class="user"><img src= {{contact1.imagen}}></a><div class="date">10:30 am</div><div class="row"><div class="message"><p>'+message_text+'</p></div></div></li></ul>');
+                    $(".row:last").after('<div class="row"><div class="message message-out pull-right">'+message_text+'</div></div>');
                     $('#message-text').val('');
                 }
             });
@@ -84,8 +84,6 @@ export class ChatGeneralComponent{
     }
     public myFunction(id,foto){
         $("span").remove('#'+id);
-        $("img").remove('#'+'foto-you');
-        $("img").add('#'+'foto-you');
         //$(location).attr('href',"mensaje");
         console.log('#'+id);
     }
