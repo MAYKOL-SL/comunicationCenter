@@ -1,8 +1,8 @@
 @media screen and (max-width: 992px) and (min-width: 769px) {
-    #derecha{
+    #derecha1{
         display:none;
     }
-    #izquierda{
+    #izquierda1{
         display: block;
     }
   }
@@ -16,18 +16,23 @@
         display: block;
     }
   }
+
 .container{
     margin-top: -55px;
     margin-left: 0px;
     margin-right: 0px;
     padding: 0px;
-    max-width: 1600px;
+    max-width: auto;
     max-height: auto;
 }
 .imgfondo{
+    position: fixed;
     background: url("../../../assets/imagenes/hederult.png");
     background-repeat: no-repeat;
-    padding: 9px 0px 21px 11px;
+    padding: 9px 0px 25px 11px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
 }/*
 .bordeicon{
     padding: 5px 18px 4px 7px;
@@ -66,136 +71,102 @@
 /*chat*/
 #derecha{
     padding: 0px;
+    padding-left: 1%;
 }
 #izquierda{
+    
     padding: 0px;
 }
-@media screen and (max-height: 1500px) and (min-height: 1367px) {
-    #contact-list{
-        height: 1370px;
-    } 
-    #activo-list{
-       height: 1370px;
-       }
-       .panel-body{
-        height: 1300px;
-      }
-      #derecha{
-        height: 1400px;
-      }
-}
-  @media screen and (max-height: 1366px) and (min-height: 1025px) {
-    #contact-list{
-        height: 1170px;
-    } 
-    #activo-list{
-       height: 1170px;
-       }
-    .panel-body{
-        height: 1050px;
-      }
-      #derecha{
-        height: 1150px;
-      }
-}
-@media screen and (max-height: 1024px) and (min-height: 824px) {
-    #contact-list{
-        height: 770px;
-    } 
-    #activo-list{
-       height: 770px;
+@media screen and (max-height: 2000px) and (min-height: 1671px) {
+    #chat{
+        top: 5%;
+        height: 92%;
     }
     .panel-body{
-        height: 700px;
+        height: 81%;
     }
-       #derecha{
-        height: 800px;
-      }
 }
-@media screen and (max-height: 823px) and (min-height: 737px) {
-    #contact-list{
-        height: 640px;
-    } 
-    #activo-list{
-       height: 640px;
+  @media screen and (max-height: 1670px) and (min-height: 1271px) {
+    #chat{
+        top: 7%;
+        height: 88%;
     }
-       .panel-body{
-        height: 540px;
-      }
-      #derecha{
-        height: 640px;
-      }
-}
-@media screen and (max-height: 736px) and (min-height: 668px) {
-    #contact-list{
-        height: 570px;
-    } 
-    #activo-list{
-       height: 570px;
+    .panel-body{
+        height: 79%;
     }
-       .panel-body{
-        height: 470px;
-      }
-      #derecha{
-        height: 570px;
-      }
 }
-@media screen and (max-height: 667px) and (min-height: 641px) {
-    #contact-list{
-        height: 500px;
-    } 
-    #activo-list{
-       height: 500px;
+@media screen and (max-height: 1270px) and (min-height: 1021px) {
+    #chat{
+        top: 8%;
+        height: 85%;
     }
-       .panel-body{
-        height: 400px;
-      }
-      #derecha{
-        height: 500px;
-      }
-}
-@media screen and (max-height: 640px) and (min-height: 569px) {
-    #contact-list{
-        height: 450px;
-    } 
-    #activo-list{
-       height: 450px;
+    .panel-body{
+        height: 77%;
     }
-       .panel-body{
-        height: 350px;
-      }
-      #derecha{
-        height: 450px;
-      }
 }
-@media screen and (max-height: 568px) and (min-height: 361) {
-    #contact-list{
-        height: 400px;
-    } 
-    #activo-list{
-       height: 400px;
+@media screen and (max-height: 1020px) and (min-height: 871px) {
+    #chat{
+        top: 9%;
+        height: 82%;
     }
-       .panel-body{
-        height: 300px;
-      }
-      #derecha{
-        height: 400px;
-      }
+    .panel-body{
+        height: 75%;
+    }
 }
-@media screen and (max-height: 360px) {
- #contact-list{
-     height: 200px;
- } 
- #activo-list{
-    height: 200px;
-  }
-  .panel-body{
-    height: 100px;
-  }
-  #derecha{
-        height: 200px;
-      }
-    
+@media screen and (max-height: 870px) and (min-height: 721px) {
+    #chat{
+        top: 11%;
+        height: 78%;
+    }
+    .panel-body{
+        height: 71%;
+    }
+}
+@media screen and (max-height: 720px) and (min-height: 621px) {
+    #chat{
+        top: 13%;
+        height: 74%;
+    }
+    .panel-body{
+        height: 67%;
+    }
+}
+@media screen and (max-height: 620px) and (min-height: 521px) {
+    #chat{
+        top: 15%;
+        height: 69%;
+    }
+    .panel-body{
+        height: 61%;
+    }
+}
+@media screen and (max-height: 520px) and (min-height: 421px) {
+    #chat{
+        top: 18%;
+        height: 61%;
+    }
+    .panel-body{
+        height: 53%;
+    }
+}
+@media screen and (max-height: 420px) and (min-height: 321px) {
+    #chat{
+        top: 21%;
+        height: 50%;
+    }
+    .panel-body{
+        height: 31%;
+    }
+}
+@media screen and (max-height: 320px) {
+    #chat{
+        top: 23%;
+        height: 46%;
+    }
+    .panel-body{
+        height: 26%;
+    }
+       
 }
 
 /* width */
@@ -218,11 +189,22 @@
     background: #275; 
   }
 
-
+.tab-content{
+    height: 96%;
+}
+.tab-pane{
+    height: 100%;
+}
+.list-group{
+    height: 100%;
+    background-color: white;
+}
 #contact-list{
     /*height: 300px;*/
+    height: 100%;
     border-radius: 10px;
     overflow: auto;
+    background-color: white;
     
 }
 #activo-list{
@@ -303,13 +285,16 @@
     margin-top: -100px;
 }
 #chat{
-    position: relative;
-    padding-top: 100px;
+    position: fixed;
+    max-height: 100%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
 }
 /*mensaje nuevo*/
 .panel{
     width: 100%;
-    height: 100%;
+    height: 110%;
     margin: 0px;
 }
 
@@ -336,10 +321,10 @@
     color: #FFFFFF;
 }
 .panel-heading{
-    border-top: 1px solid #ccc;
+    height: 100px;
+    /*border-top: 1px solid #ccc;*/
 }
-.panel-body{
-    max-height: 1400px;   
+.panel-body{   
     overflow-y: scroll;
     background-color: white;
     position: relative;
