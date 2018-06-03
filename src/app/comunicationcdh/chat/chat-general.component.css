@@ -1,14 +1,22 @@
-@media screen and (max-width: 992px) and (min-width: 769px) {
-    #derecha1{
-        display:none;
+@media screen and (max-width: 2000px) and (min-width: 1025px) {
+    #chat{
+        left: 5%;
+        right: 5%;
     }
-    #izquierda1{
-        display: block;
+  }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    #chat{
+        left: 0%;
+        right: 0%;
     }
   }
   
   
   @media screen and (max-width: 767px) {
+    #chat{
+        left: 0%;
+        right: 0%;
+    }
     #derecha{
         display:none;
     }
@@ -72,6 +80,7 @@
 #derecha{
     padding: 0px;
     padding-left: 1%;
+
 }
 #izquierda{
     
@@ -287,8 +296,6 @@
 #chat{
     position: fixed;
     max-height: 100%;
-    left: 0%;
-    right: 0%;
     bottom: 0%;
 }
 /*mensaje nuevo*/
