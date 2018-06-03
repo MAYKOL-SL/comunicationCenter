@@ -1,11 +1,11 @@
 .container{    
     position: fixed;
-    top: 45%;
+    top: 46%;
     background-color: #FFFFFF;
     border-radius: 5%;
-    min-height: 225px;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    min-height: 250px;
+    margin-bottom: 0px;
+    margin-right: 0px;
     overflow: hidden;
     width: 15%;
     float: left;
@@ -145,6 +145,10 @@ h1{
   }
   .btn-border-o.btn-blue:before, .btn-border-o.btn-blue:after {
     border-color: #3498db;
+  }
+
+  .border{
+      width: 250px;
   }
  
   
