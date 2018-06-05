@@ -92,13 +92,20 @@
                     <div class="date">
                         <span class="bold">Today</span> 11:54
                     </div>
-                    <div *ngFor="let mensaje of mensajes" class="row">
-                        <div *ngIf="mensaje.val == false" class="message message-in">
-                            {{mensaje.mens}}
+                    <div *ngFor="let mensaje of mensajes" class="chat-mensaje">
+                        <div  *ngIf="mensaje.val == false">
+                            <img id="foto-other" src= {{contact1.imagen}} class="rounded-circle">
+                            <div  class="message message-in">
+                                {{mensaje.mens}}
+                            </div>
                         </div>
-                        <div *ngIf="mensaje.val == true" class="message message-out">
-                            {{mensaje.mens}}
+                        <div *ngIf="mensaje.val == true">
+                            <div  class="message message-out">
+                                {{mensaje.mens}}
+                            </div>
+                            <!--<a class="user" href="#"><img alt="" src= {{contact1.imagen}} /></a>-->
                         </div>
+                        
                     </div>
                     <!--<div class="row">
                         <div class="message message-in pull-left">

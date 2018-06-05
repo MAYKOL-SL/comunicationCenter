@@ -331,10 +331,13 @@
     height: 100px;
     /*border-top: 1px solid #ccc;*/
 }
-.panel-body{   
-    overflow-y: scroll;
-    background-color: white;
+.panel-body{
+    padding: 10px;
+    background-color: #fff;
+    overflow: auto;
     position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .date{
@@ -349,20 +352,25 @@
 
 
 .message{
-    position: relatives;
+    position: relative;
     font-size: 1.2em;
-    max-width:300px;
+    max-width: 80%;
     border-radius: 15px;
     padding: 10px;
     margin-bottom: 10px;
+    display: block;
 }
 .message-in {
-    background-color: #E5E5EA;
+    left: 20px;
+    float: left;
+    background-color: #FFF;
+    border: 2px solid #E3E3E3;
     
 }
 .message-out{
+    float: right;
     background-color : #DDFFDD;
-    right: 50%;
+    
 }
 
 .fa-camera, .fa-send{
@@ -372,4 +380,15 @@
     height: 50px;
     width: auto;
     margin: -5px;
+}
+.chat-mensaje{
+    clear: both;/*
+    position: relative;*/
+}
+#foto-other{
+    height: 40px;
+    left: 10px;
+    float: left;
+    
+    padding-bottom: 5px;
 }
