@@ -4,6 +4,7 @@
             <div class="col-6 pt-1 alineado-textico">
                 <a class="bordeicon">
                     <span id="menu" class="menu fa fa-bars"></span>
+                    <span (click)="myFunctionAtras()" id="volver"  class="volver fa fa-chevron-left"></span>
                 </a>
                 <label class="titulo">Chat</label>
             </div>
@@ -26,7 +27,7 @@
                 <div id="recent" class="tab-pane fade show active">
                     <ul id="contact-list" class="list-group" >
                         <li *ngFor="let contacto of contactos"  class="list-group-item " >
-                            <div (click)="myFunction(contacto.id,contacto.imagen, contacto.mensajes)" class="row">
+                            <div (click)="myFunction(contacto.id,contacto.imagen, contacto.nombre, contacto.mensajes)" class="row">
                                 <div class="col-3">
                                     <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
                                     <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
@@ -49,7 +50,7 @@
                 <div id="active" class="tab-pane fade">
                     <ul id="activo-list" class="list-group" >
                         <li *ngFor="let activo of active"  class="list-group-item " >
-                            <div (click)="myFunction(activo.id,activo.imagen, activo.mensajes)" class="row">
+                            <div (click)="myFunction(activo.id,activo.imagen, contacto.nombre, activo.mensajes)" class="row">
                                 <div class="col-3">
                                     <img id="foto-contacto" src = {{activo.imagen}}  class="rounded-circle" />
                                     <svg *ngIf="activo.estado == true" id="estado" height="60" width="60">
@@ -103,30 +104,9 @@
                             <div  class="message message-out">
                                 {{mensaje.mens}}
                             </div>
-                            <!--<a class="user" href="#"><img alt="" src= {{contact1.imagen}} /></a>-->
                         </div>
                         
                     </div>
-                    <!--<div class="row">
-                        <div class="message message-in pull-left">
-                            Hey! What's up?
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="message message-out pull-right">
-                            Good! And you?
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="message message-in pull-left">
-                            Great! 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="message message-out pull-right">
-                            Still ok to go to the cinema ?
-                        </div>
-                    </div>-->
                 </div>
                 <div class="panel-footer">
                     <form>

@@ -50,6 +50,12 @@
     position: relative;
     color: #319AF2;
 }
+.fa-bars{
+    display: contents;
+}
+.volver{
+    display: none;
+}
 .notificacion{
     font-size: 20px;
     position: relative;

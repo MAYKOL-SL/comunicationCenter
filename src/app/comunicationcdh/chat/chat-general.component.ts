@@ -166,13 +166,27 @@ export class ChatGeneralComponent{
         console.log("");
 
     }
-    public myFunction(id,foto,mensajes){
+    public myFunction(id,foto,nombre,mensajes){
+        //console.log($(".titulo").text("perrito"));
         console.log(mensajes);
         $("span").remove('#'+id);
         $("#foto-perfil").attr("src",foto);
         //$(location).attr('href',"mensaje");
         this.mensajes = mensajes;
-        console.log('#'+id);
+        $("#izquierda").css("display", "none");
+        $("#derecha").css("display", "block");
+        $(".titulo").text(nombre);
+        $(".fa-bars").css("display", "none");
+        $(".volver").css("display", "contents");
+
+    }
+    public myFunctionAtras(){
+        //console.log($(".titulo").text("perrito"));
+        
+        $("#izquierda").css("display", "block");
+        $("#derecha").css("display", "none");
+        $(".fa-bars").css("display", "contents");
+        $(".volver").css("display", "none");
 
     }
     public myFunctionMessage(mensajes){
