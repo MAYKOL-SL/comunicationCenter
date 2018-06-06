@@ -105,6 +105,7 @@ export class ChatGeneralComponent{
         if(message_text !== ''){
             this.aux = new Mensaje(1, '9:10 am', message_text, 'other', true);
             mensajes.push(this.aux);
+            $('#message-text').val(' ')
         }
         
         //$(location).attr('href',"mensaje");
