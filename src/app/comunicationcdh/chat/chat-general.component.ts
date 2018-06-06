@@ -1,7 +1,8 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, ApplicationModule} from '@angular/core';
 import { Contact } from '../list-chat/contact';
 import { Mensaje } from '../mensaje/mensaje';
 declare var $:any;
+declare var app: any;
 
 @Component({
     selector: 'chat-general',
@@ -19,6 +20,7 @@ export class ChatGeneralComponent{
     public contact1: Contact;
     public contact2: Contact;
     public mensajes: Array<Mensaje>;
+    public aux : Mensaje;
 
 
     constructor(){
@@ -71,21 +73,40 @@ export class ChatGeneralComponent{
 
     ngOnInit(){
         console.log(this.contact);
-        $(function() {
+        
+        /*$(function() {
             $('#envoi').on('click', function(){
                 var message_text = $('#message-text').val();
+                console.log(this.mensajes);
                 if(message_text !== ''){
-                    $(".row:last").after('<div class="row"><div class="message message-out pull-right">'+message_text+'</div></div>');
+                    this.aux = new Mensaje(1, '9:10 am', message_text, 'other', true);
+                    console.log(this.aux);
+                    this.mensajes = [this.aux];
+                    this.mensajes.push(this.aux);
+                    console.log(this.mensajes);
                     $('#message-text').val('');
+
                 }
             });
-        });
+        });*/
 
     }
     public myFunction(id,foto){
+        console.log(foto);
         $("span").remove('#'+id);
         $("#foto-perfil").attr("src",foto);
         //$(location).attr('href',"mensaje");
         console.log('#'+id);
+    }
+    public myFunctionMessage(mensajes){
+        console.log(mensajes);
+        var message_text = $('#message-text').val();
+        console.log(message_text);
+        if(message_text !== ''){
+            this.aux = new Mensaje(1, '9:10 am', message_text, 'other', true);
+            mensajes.push(this.aux);
+        }
+        
+        //$(location).attr('href',"mensaje");
     }
 }

@@ -26,7 +26,7 @@
                 <div id="recent" class="tab-pane fade show active">
                     <ul id="contact-list" class="list-group" >
                         <li *ngFor="let contacto of contactos"  class="list-group-item " >
-                            <div (click)="myFunction(contacto.id,contacto.imagen)" class="row">
+                            <div (click)="myFunction(contacto.id,contacto.imagen, mensajes)" class="row">
                                 <div class="col-3">
                                     <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
                                     <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
@@ -136,7 +136,7 @@
                             </span>
                             <input id="message-text" type="text" class="form-control" placeholder="Message">
                             <span class="input-group-btn">
-                                <button id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
+                                <button (click)="myFunctionMessage(mensajes)" id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
                             </span>
                         </div>
                     </form>
