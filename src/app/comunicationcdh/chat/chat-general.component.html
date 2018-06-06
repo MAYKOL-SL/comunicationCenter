@@ -26,7 +26,7 @@
                 <div id="recent" class="tab-pane fade show active">
                     <ul id="contact-list" class="list-group" >
                         <li *ngFor="let contacto of contactos"  class="list-group-item " >
-                            <div (click)="myFunction(contacto.id,contacto.imagen)" class="row">
+                            <div (click)="myFunction(contacto.id,contacto.imagen, mensajes)" class="row">
                                 <div class="col-3">
                                     <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
                                     <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
@@ -92,13 +92,20 @@
                     <div class="date">
                         <span class="bold">Today</span> 11:54
                     </div>
-                    <div *ngFor="let mensaje of mensajes" class="row">
-                        <div *ngIf="mensaje.val == false" class="message message-in">
-                            {{mensaje.mens}}
+                    <div *ngFor="let mensaje of mensajes" class="chat-mensaje">
+                        <div  *ngIf="mensaje.val == false">
+                            <img id="foto-other" src= {{contact1.imagen}} class="rounded-circle">
+                            <div  class="message message-in">
+                                {{mensaje.mens}}
+                            </div>
                         </div>
-                        <div *ngIf="mensaje.val == true" class="message message-out">
-                            {{mensaje.mens}}
+                        <div *ngIf="mensaje.val == true">
+                            <div  class="message message-out">
+                                {{mensaje.mens}}
+                            </div>
+                            <!--<a class="user" href="#"><img alt="" src= {{contact1.imagen}} /></a>-->
                         </div>
+                        
                     </div>
                     <!--<div class="row">
                         <div class="message message-in pull-left">
@@ -129,7 +136,7 @@
                             </span>
                             <input id="message-text" type="text" class="form-control" placeholder="Message">
                             <span class="input-group-btn">
-                                <button id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
+                                <button (click)="myFunctionMessage(mensajes)" id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
                             </span>
                         </div>
                     </form>
