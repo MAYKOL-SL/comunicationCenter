@@ -73,22 +73,6 @@ export class ChatGeneralComponent{
 
     ngOnInit(){
         console.log(this.contact);
-        
-        /*$(function() {
-            $('#envoi').on('click', function(){
-                var message_text = $('#message-text').val();
-                console.log(this.mensajes);
-                if(message_text !== ''){
-                    this.aux = new Mensaje(1, '9:10 am', message_text, 'other', true);
-                    console.log(this.aux);
-                    this.mensajes = [this.aux];
-                    this.mensajes.push(this.aux);
-                    console.log(this.mensajes);
-                    $('#message-text').val('');
-
-                }
-            });
-        });*/
 
     }
     public myFunction(id,foto){
