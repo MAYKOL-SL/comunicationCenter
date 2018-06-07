@@ -149,45 +149,49 @@ export class ChatGeneralComponent{
 
 
     ngOnInit(){
-        var nick = [
-            new Mensaje(1, '9:10 am', 'hola como estas?', 'other', false),
-            new Mensaje(2, '9:13 am', 'feliz, te cuento que estoy estudiando', 'you', true),
-            new Mensaje(3, '9:19 am', 'que bueno me alegro por tu familia debe estar orgulloso de ti', 'other', false),
-            new Mensaje(4, '9:31 am', 'me dijeron que viajaste y nadie sabia de ti', 'you', true),
-            new Mensaje(5, '9:32 am', 'donde te metiste?', 'you', true),
-            new Mensaje(6, '9:45 am', 'estuve conociendo un poco el mundo', 'other', false),
-            new Mensaje(7, '9:47 am', 'fui a europa luego a estados unidos pero volvi por que extrane bolivia', 'other', false),
-            new Mensaje(8, '9:59 am', 'claro pues bolivia es un bonito lugar para vivir', 'you', true),
-            new Mensaje(9, '9:59 am', 'si extrane la comida de cochabamba', 'other', false),
-            new Mensaje(10, '10:02 am', 'quisieras ir a cenar manana y hablamos de los viejos tiempos', 'other', false),
-            new Mensaje(11, '11:10 am', 'manana por la noche tendre tiempo', 'you', true),
-
+        var queries = [
+            {
+                context: 'mobile',
+                callback: function() {
+                    console.log('Mobile callback.');
+                    // Lógica que se ejecutará cuando se detecte un móvil
+                }
+            },
+            {
+                context: 'skinny',
+                callback: function() {
+                    console.log('skinny callback! ');
+                    //Lógica específica para tablets
+                }
+            },
+            {
+                context: 'wide-screen',
+                callback: function() {
+                    console.log('wide-screen callback .');
+                    // Pantallas panorámicas
+                }
+            }
         ];
-        console.log("");
+        console.log("hola");
 
     }
     public myFunction(id,foto,nombre,mensajes){
         //console.log($(".titulo").text("perrito"));
         console.log(mensajes);
+        $(".titulo").text(nombre);
         $("span").remove('#'+id);
         $("#foto-perfil").attr("src",foto);
-        //$(location).attr('href',"mensaje");
         this.mensajes = mensajes;
-        $("#izquierda").css("display", "none");
-        $("#derecha").css("display", "block");
-        $(".titulo").text(nombre);
-        $(".fa-bars").css("display", "none");
-        $(".volver").css("display", "contents");
-
-    }
-    public myFunctionAtras(){
-        //console.log($(".titulo").text("perrito"));
+        //$(location).attr('href',"mensaje");
         
-        $("#izquierda").css("display", "block");
-        $("#derecha").css("display", "none");
-        $(".fa-bars").css("display", "contents");
-        $(".volver").css("display", "none");
-
+        
+        if (matchMedia('(max-width: 767px)').matches) {
+            $("#izquierda").css("display", "none");
+            $("#derecha").css("display", "block");
+            $(".fa-bars").css("display", "none");
+            $(".volver").css("display", "contents");
+          }
+        
     }
     public myFunctionMessage(mensajes){
         console.log(mensajes);
