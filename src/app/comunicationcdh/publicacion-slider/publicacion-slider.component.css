@@ -89,7 +89,6 @@
      width: 100%;
      border-bottom: 0;
  }
- 
  @media (min-width: 320px) {
   .nav > li > a {
       position: relative;
@@ -97,25 +96,28 @@
       /*padding: 0px 31px;*/
   }
   .contLike{
-         padding: 0px 58px 0px 4px;
-         left: 15%;
+         left: 50px;
          cursor: pointer;  
   }
-  #p1{
+  #p1-like{
+  left: 46px;    
     position: absolute;
   }
-
   .contChat{
-         padding: 0px 58px 1px 4px;
-         left: 25%;  
-         cursor: pointer; 
+         left: 150px;  
+         cursor: pointer;    
+  }
+  #p1-comment{
+  left: 165px;    
+    position: absolute;
+  }
+  .contShare{
+         left: 230px;
          
   }
-
-  .contShare{
-         padding: 0px 2px 0px 4px;
-         left: 80%;
-         
+  #p1-share{
+  left: 265px;    
+    position: absolute;
   }
 }
 /* 4 columnas para grandes tablets*/
@@ -126,21 +128,28 @@
       /*padding: 0px 36px;*/
   }
   .contLike{
-         padding: 0px 86px 0px 4px;
-         left: 15%;
-         cursor: pointer; 
-  }
-
-  .contChat{
-         padding: 0px 73px 1px 4px;
-         left: 25%;  
-         cursor: pointer; 
-  }
-
-  .contShare{
-         padding: 0px 2px 0px 4px;
-         left: 80%;          
-  }
+    left: 60px;
+    cursor: pointer;  
+}
+#p1-like{
+  left: 55px;
+position: absolute;
+}
+.contChat{
+    left: 150px;  
+    cursor: pointer;    
+}
+#p1-comment{
+  left: 170px;  
+position: absolute;
+}
+.contShare{
+    left: 230px;
+}
+#p1-share{
+  left: 278px;  
+position: absolute;
+}
 }
  .alin-numer{
    display: contents;
