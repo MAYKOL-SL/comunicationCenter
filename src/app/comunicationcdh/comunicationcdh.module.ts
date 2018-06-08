@@ -17,6 +17,9 @@ import { MensajeComponent } from './mensaje/mensaje.component';
 import { ContactoComponent } from './contactos/contacto.component';
 import { VideoLocalComponent } from './Video-Local/video-local.component';
 import { CommentComponent } from './ChatComment/comment.component';
+import { PublicacionImgTresComponent } from './publicacion-img-tres/publicacion-img-tres.component';
+import { PublicacionImgLinkComponent } from './publicacion-img-link/publicacion-img-link.component';
+import { PublicacionSliderComponent } from './publicacion-slider/publicacion-slider.component';
 
 
 @NgModule({
@@ -28,6 +31,6 @@ import { CommentComponent } from './ChatComment/comment.component';
                   PublicacionImgUnComponent, PublicacionImgMuchComponent, NotifiComponent,
                   TareasComponent, ChatComponent, ChatGeneralComponent, MensajeComponent,
                 ContactoComponent,
-                  ChatComponent, CommentComponent, VideoLocalComponent]
+                  ChatComponent, CommentComponent, VideoLocalComponent, PublicacionImgTresComponent, PublicacionImgLinkComponent, PublicacionSliderComponent]
 })
 export class ComunicationcdhModule { }
