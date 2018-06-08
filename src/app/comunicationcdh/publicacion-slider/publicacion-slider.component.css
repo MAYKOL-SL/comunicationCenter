@@ -13,15 +13,15 @@
  /* 2 columnas para smarfonts */
  @media (min-width: 320px) {
      .img-complet  {
-       width: 289px;
+       width: 100%;
        height: 337px;
      }
  }
  /* 4 columnas para grandes tablets*/
  @media (min-width: 992px) {
      .img-complet  {
-       width: 348px;
-       height: 337px;
+       width: 400px;
+       height: auto;
      }
  }
  
@@ -91,68 +91,57 @@
  }
  
  @media (min-width: 320px) {
-   .nav > li > a {
-       position: relative;
-       display: block;
-       /*padding: 0px 31px;*/
-   }
-   .contLike{
-    left: 50px;
-    cursor: pointer;  
-}
-#p1-like{
-left: 46px;    
-position: absolute;
-}
-.contChat{
-    left: 150px;  
-    cursor: pointer;    
-}
-#p1-comment{
-left: 165px;    
-position: absolute;
-}
-.contShare{
-    left: 230px;
-    
-}
-#p1-share{
-left: 265px;    
-position: absolute;
-}
+  .nav > li > a {
+      position: relative;
+      display: block;
+      /*padding: 0px 31px;*/
+  }
+  .contLike{
+         padding: 0px 58px 0px 4px;
+         left: 15%;
+         cursor: pointer;  
+  }
+  #p1{
+    position: absolute;
+  }
+
+  .contChat{
+         padding: 0px 58px 1px 4px;
+         left: 25%;  
+         cursor: pointer; 
+         
+  }
+
+  .contShare{
+         padding: 0px 2px 0px 4px;
+         left: 80%;
+         
+  }
 }
 /* 4 columnas para grandes tablets*/
 @media (min-width: 992px) {
-.nav > li > a {
- position: relative;
- display: block;
- /*padding: 0px 36px;*/
+  .nav > li > a {
+      position: relative;
+      display: block;
+      /*padding: 0px 36px;*/
+  }
+  .contLike{
+         padding: 0px 86px 0px 4px;
+         left: 15%;
+         cursor: pointer; 
+  }
+
+  .contChat{
+         padding: 0px 73px 1px 4px;
+         left: 25%;  
+         cursor: pointer; 
+  }
+
+  .contShare{
+         padding: 0px 2px 0px 4px;
+         left: 80%;          
+  }
 }
-.contLike{
-left: 60px;
-cursor: pointer;  
-}
-#p1-like{
-left: 55px;
-position: absolute;
-}
-.contChat{
-left: 150px;  
-cursor: pointer;    
-}
-#p1-comment{
-left: 170px;  
-position: absolute;
-}
-.contShare{
-left: 230px;
-}
-#p1-share{
-left: 278px;  
-position: absolute;
-}
-}
- 
  .alin-numer{
    display: contents;
  }
@@ -183,16 +172,6 @@ position: absolute;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
   }
   
-  @media (min-width: 320px) {
-      .search-form {
-        width: 288px;
-      }
-  }
-  @media (min-width: 992px) {
-      .search-form {
-        width: 350px;
-      }
-  }
   
   
   .search-input {
@@ -371,10 +350,119 @@ position: absolute;
     height: 21px;
     border-radius: 50%;
   }
+/*modal*/
+/*header modal*/
+.modal-header{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  
+}
+.close{
+  position: absolute;;
+  background: url("../../../assets/images/Back.svg");
+  line-height:30px;
+  top: 5%;  
+}
+#text-back{
+  position: absolute;
+  font-weight: normal;
+  color:#1082FF;
+  line-height:30px;
+  top: 2%;
+  left: 40px;
+  cursor: pointer;
+}
+#text-principal{
+  position: absolute;
+  font-weight: normal;
+  line-height:30px;
+  top: 2%;
+  left: 45%;
+}
+#cant-like{
+  position: absolute;
+  font-weight: normal;
+  line-height:30px;
+  top: 2%;
+  left: 85%;
+}
+#like-comment{
+  position: absolute;
+  font-weight: normal;
+  line-height:30px;
+  top: 2%;
+  left: 90%;
+  width: 30px;
+  height: 30px;
+}
 
+/*fin header modal*/
+/*body modal*/
+.modal-body{
+    background-color: #EBEBEF;
+    overflow-y:scroll;
+    width: 100%;
+    height: 350px;
+}
+/*fin body modal*/
+/*fooder modal*/
 
-  /*todo lo responsibo aqui*/
+.modal-footer{
+  position: relative;  
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  
+}
+.message-submit{
+  position: absolute;
+  top: 10px;
+  width:45px;
+  height:45px;
+  background-color:#FFFFFF;
+  margin: 2px;
+  padding: 1%; 
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 100px;
+  font-size:2px;
+  line-height:30px;
+  text-transform: uppercase;
+  float:right;   
+  text-align: center;
+}
+.imagen-sent{
+  position: relative;
+  font-weight: normal;
+  line-height:30px;
+  top: 0%;
+  left: 30%;
+  width: 36px;
+  height: 68px;
+  cursor: pointer;
+}
+.modal-footer{
+  background-color: #EBEBEF;
+}
+.modal-content{
+  border-radius: 10px;
+}
+/*fin fooder modal*/
+
+/*aumentado el ancho del las publicaciones */
+.ancho-card{
+  width: 402px;
+  right: 25px;
+}
+
+/*aumentado el ancho del las publicaciones fin*/
+
+/*todo lo responsibo aqui*/
 @media (min-width: 320px) {
+  .search-form {
+    width: 288px;
+  }
   .ancho-card{
     width: auto;
     right: auto;
@@ -382,6 +470,9 @@ position: absolute;
   
 }
 @media (min-width: 992px) {
+  .search-form {
+    width: 350px;
+  }
   .ancho-card{
     width: 402px;
     right: 25px;
