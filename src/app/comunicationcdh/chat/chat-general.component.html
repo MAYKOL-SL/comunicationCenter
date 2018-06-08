@@ -74,7 +74,7 @@
         </div>
         <div id="derecha" class="col-12 col-sm-12 col-md-7 derecha">
             <div class="panel panel-default">
-                <div class="panel-heading text-center">
+                <!--<div class="panel-heading text-center">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="icon"><span class="fa fa-chevron-left"></span></div>
@@ -88,7 +88,7 @@
                             <div class="icon"><span class="fa fa-info-circle"></span></div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="panel-body">
                     <div class="date">
                         <span class="bold">Today</span> 11:54
@@ -112,34 +112,18 @@
                     <form>
                         <div class="input-group">
                             <span class="input-group-btn">
-                                <button data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-camera"></span></button>
+                                <button data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-plus"></span></button>
                             </span>
-                            <input id="message-text" type="text" class="form-control" placeholder="Message">
+                            <a class="mensaje-texto">
+                                <input id="message-text" type="text" class="form-control" placeholder="Write here">
+                            </a>
                             <span class="input-group-btn">
                                 <button (click)="myFunctionMessage(mensajes)" id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
                             </span>
                         </div>
                     </form>
                 </div>
-                </div>
-                    
-                    <div class="modal" id="modal-photo">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">x</button>
-                                <h4 class="modal-title">Envoyer une photo</h4>
-                            </div>
-                            <div class="modal-body">
-                                <input type="file" name ="photo" id="photo" accept="image/*">
-                            </div>
-                            <div class="modal-footer">
-                                <button id="validation" class="btn btn-primary">Envoyer</button>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    
+            </div>                    
         </div>
     </div>
 </div>

@@ -149,6 +149,13 @@ export class ChatGeneralComponent{
 
 
     ngOnInit(){
+        $("#message-text1").emojioneArea({
+            pickerPosition: "top",
+            filtersPosition: "bottom",
+            tonesStyle: "square",
+            placeholder: "Write some comment",
+            inline: true,
+        });
         var queries = [
             {
                 context: 'mobile',
