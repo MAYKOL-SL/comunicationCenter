@@ -26,7 +26,7 @@
                 <div id="recent" class="tab-pane fade show active">
                     <ul id="contact-list" class="list-group" >
                         <li *ngFor="let contacto of contactos"  class="list-group-item " >
-                            <div (click)="myFunction(contacto.id,contacto.imagen, mensajes)" class="row">
+                            <div (click)="myFunction(contacto.id,contacto.imagen, contacto.mensajes)" class="row">
                                 <div class="col-3">
                                     <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
                                     <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
@@ -49,7 +49,7 @@
                 <div id="active" class="tab-pane fade">
                     <ul id="activo-list" class="list-group" >
                         <li *ngFor="let activo of active"  class="list-group-item " >
-                            <div (click)="myFunction(activo.id,activo.imagen)" class="row">
+                            <div (click)="myFunction(activo.id,activo.imagen, activo.mensajes)" class="row">
                                 <div class="col-3">
                                     <img id="foto-contacto" src = {{activo.imagen}}  class="rounded-circle" />
                                     <svg *ngIf="activo.estado == true" id="estado" height="60" width="60">

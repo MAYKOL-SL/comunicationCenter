@@ -14,6 +14,7 @@
 @media (min-width: 320px) {
    .img-complet  {
      width: 100%;
+<<<<<<< HEAD
      height: 337px;
    }
 }
@@ -79,6 +80,76 @@
 @media (min-width: 992px) {
  .des{
     display:block;
+=======
+     border-bottom: 0;
+ }
+ 
+ @media (min-width: 320px) {
+   .nav > li > a {
+       position: relative;
+       display: block;
+       /*padding: 0px 31px;*/
+   }
+   .contLike{
+    left: 50px;
+    cursor: pointer;  
+}
+#p1-like{
+left: 46px;    
+position: absolute;
+}
+.contChat{
+    left: 150px;  
+    cursor: pointer;    
+}
+#p1-comment{
+left: 165px;    
+position: absolute;
+}
+.contShare{
+    left: 230px;
+    
+}
+#p1-share{
+left: 265px;    
+position: absolute;
+}
+}
+/* 4 columnas para grandes tablets*/
+@media (min-width: 992px) {
+.nav > li > a {
+ position: relative;
+ display: block;
+ /*padding: 0px 36px;*/
+}
+.contLike{
+left: 60px;
+cursor: pointer;  
+}
+#p1-like{
+left: 55px;
+position: absolute;
+}
+.contChat{
+left: 150px;  
+cursor: pointer;    
+}
+#p1-comment{
+left: 170px;  
+position: absolute;
+}
+.contShare{
+left: 230px;
+}
+#p1-share{
+left: 278px;  
+position: absolute;
+}
+}
+ 
+ .alin-numer{
+   display: contents;
+>>>>>>> 8adad2f0743689ce87112ecd53ec935195dde1f9
  }
 }
 
