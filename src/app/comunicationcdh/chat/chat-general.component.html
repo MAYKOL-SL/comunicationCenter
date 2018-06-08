@@ -2,8 +2,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark imgfondo">
         <div class="col-12 row flex-nowrap justify-content-between align-items-center">
             <div class="col-6 pt-1 alineado-textico">
-                <a class="bordeicon">
+                <a href="chat-general" class="bordeicon">
                     <span id="menu" class="menu fa fa-bars"></span>
+                    <span id="volver"  class="volver fa fa-chevron-left"></span>
                 </a>
                 <label class="titulo">Chat</label>
             </div>
@@ -26,7 +27,7 @@
                 <div id="recent" class="tab-pane fade show active">
                     <ul id="contact-list" class="list-group" >
                         <li *ngFor="let contacto of contactos"  class="list-group-item " >
-                            <div (click)="myFunction(contacto.id,contacto.imagen, contacto.mensajes)" class="row">
+                            <div (click)="myFunction(contacto.id,contacto.imagen, contacto.nombre, contacto.mensajes)" class="row">
                                 <div class="col-3">
                                     <img id="foto-contacto" src = {{contacto.imagen}}  class="rounded-circle" />
                                     <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
@@ -49,7 +50,7 @@
                 <div id="active" class="tab-pane fade">
                     <ul id="activo-list" class="list-group" >
                         <li *ngFor="let activo of active"  class="list-group-item " >
-                            <div (click)="myFunction(activo.id,activo.imagen, activo.mensajes)" class="row">
+                            <div (click)="myFunction(activo.id,activo.imagen, contacto.nombre, activo.mensajes)" class="row">
                                 <div class="col-3">
                                     <img id="foto-contacto" src = {{activo.imagen}}  class="rounded-circle" />
                                     <svg *ngIf="activo.estado == true" id="estado" height="60" width="60">
@@ -73,7 +74,7 @@
         </div>
         <div id="derecha" class="col-12 col-sm-12 col-md-7 derecha">
             <div class="panel panel-default">
-                <div class="panel-heading text-center">
+                <!--<div class="panel-heading text-center">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="icon"><span class="fa fa-chevron-left"></span></div>
@@ -87,7 +88,7 @@
                             <div class="icon"><span class="fa fa-info-circle"></span></div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="panel-body">
                     <div class="date">
                         <span class="bold">Today</span> 11:54
@@ -103,63 +104,26 @@
                             <div  class="message message-out">
                                 {{mensaje.mens}}
                             </div>
-                            <!--<a class="user" href="#"><img alt="" src= {{contact1.imagen}} /></a>-->
                         </div>
                         
                     </div>
-                    <!--<div class="row">
-                        <div class="message message-in pull-left">
-                            Hey! What's up?
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="message message-out pull-right">
-                            Good! And you?
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="message message-in pull-left">
-                            Great! 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="message message-out pull-right">
-                            Still ok to go to the cinema ?
-                        </div>
-                    </div>-->
                 </div>
                 <div class="panel-footer">
                     <form>
                         <div class="input-group">
                             <span class="input-group-btn">
-                                <button data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-camera"></span></button>
+                                <button data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-plus"></span></button>
                             </span>
-                            <input id="message-text" type="text" class="form-control" placeholder="Message">
+                            <a class="mensaje-texto">
+                                <input id="message-text" type="text" class="form-control" placeholder="Write here">
+                            </a>
                             <span class="input-group-btn">
                                 <button (click)="myFunctionMessage(mensajes)" id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
                             </span>
                         </div>
                     </form>
                 </div>
-                </div>
-                    
-                    <div class="modal" id="modal-photo">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">x</button>
-                                <h4 class="modal-title">Envoyer une photo</h4>
-                            </div>
-                            <div class="modal-body">
-                                <input type="file" name ="photo" id="photo" accept="image/*">
-                            </div>
-                            <div class="modal-footer">
-                                <button id="validation" class="btn btn-primary">Envoyer</button>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    
+            </div>                    
         </div>
     </div>
 </div>

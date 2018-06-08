@@ -3,16 +3,22 @@
         left: 5%;
         right: 5%;
     }
+    .titulo{
+        font-size: 24px;
+    }
   }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     #chat{
         left: 0%;
         right: 0%;
     }
+    .titulo{
+        font-size: 23px;
+    }
   }
   
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) and (min-width: 401px) {
     #chat{
         left: 0%;
         right: 0%;
@@ -22,6 +28,24 @@
     }
     #izquierda{
         display: block;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    #chat{
+        left: 0%;
+        right: 0%;
+    }
+    #derecha{
+        display:none;
+    }
+    #izquierda{
+        display: block;
+    }
+    .titulo{
+        font-size: 14px;
     }
   }
 
@@ -50,6 +74,11 @@
     position: relative;
     color: #319AF2;
 }
+.fa-bars{
+}
+.volver{
+    display: none;
+}
 .notificacion{
     font-size: 20px;
     position: relative;
@@ -72,7 +101,7 @@
 }
 .titulo{
     padding-left: 10%;
-    font-size: 23px;
+    /*font-size: 23px;*/
     position: relative;
     color: #4ECB96;
     color: linear-gradient(to bottom right, #7EEEA5, #44D18D,  #1FA785);
@@ -93,7 +122,7 @@
         height: 92%;
     }
     .panel-body{
-        height: 81%;
+        height: 95%;
     }
 }
   @media screen and (max-height: 1670px) and (min-height: 1271px) {
@@ -102,7 +131,7 @@
         height: 88%;
     }
     .panel-body{
-        height: 79%;
+        height: 95%;
     }
 }
 @media screen and (max-height: 1270px) and (min-height: 1021px) {
@@ -111,7 +140,7 @@
         height: 85%;
     }
     .panel-body{
-        height: 77%;
+        height: 95%;
     }
 }
 @media screen and (max-height: 1020px) and (min-height: 871px) {
@@ -120,7 +149,7 @@
         height: 82%;
     }
     .panel-body{
-        height: 75%;
+        height: 95%;
     }
 }
 @media screen and (max-height: 870px) and (min-height: 721px) {
@@ -129,7 +158,7 @@
         height: 78%;
     }
     .panel-body{
-        height: 71%;
+        height: 94%;
     }
 }
 @media screen and (max-height: 720px) and (min-height: 621px) {
@@ -138,7 +167,7 @@
         height: 74%;
     }
     .panel-body{
-        height: 67%;
+        height: 94%;
     }
 }
 @media screen and (max-height: 620px) and (min-height: 521px) {
@@ -147,7 +176,7 @@
         height: 69%;
     }
     .panel-body{
-        height: 61%;
+        height: 93%;
     }
 }
 @media screen and (max-height: 520px) and (min-height: 421px) {
@@ -156,7 +185,7 @@
         height: 61%;
     }
     .panel-body{
-        height: 53%;
+        height: 93%;
     }
 }
 @media screen and (max-height: 420px) and (min-height: 321px) {
@@ -165,7 +194,7 @@
         height: 50%;
     }
     .panel-body{
-        height: 31%;
+        height: 91%;
     }
 }
 @media screen and (max-height: 320px) {
@@ -174,7 +203,7 @@
         height: 46%;
     }
     .panel-body{
-        height: 26%;
+        height: 93%;
     }
        
 }
@@ -301,8 +330,9 @@
 }
 /*mensaje nuevo*/
 .panel{
+    padding-top: 21px;
     width: 100%;
-    height: 110%;
+    height: 100%;
     margin: 0px;
 }
 
@@ -326,12 +356,6 @@
 .fa-user{
     font-size: 40px;
     color: #FFFFFF;
-}
-.panel-heading{
-    background: url("../../../assets/imagenes/hederult.png");
-    background-repeat: no-repeat;
-    height: 100px;
-    /*border-top: 1px solid #ccc;*/
 }
 .panel-body{
     padding-top: 20px;
@@ -377,8 +401,8 @@
     
 }
 
-.fa-camera, .fa-send{
-    color: #848484;
+.fa-plus, .fa-send{
+    color: #319AF2;
 }
 #contact img{
     height: 50px;
@@ -396,3 +420,21 @@
     
     padding-bottom: 5px;
 }
+
+.mensaje-texto{
+    width: 70%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+#message-text{
+    border-radius: 20px;
+}
+.input-group-btn{
+    border-radius: 35%;
+    width: 15%;
+}
+.input-group .btn{
+    background-color: white;
+    border-radius: 20px;
+}
+
