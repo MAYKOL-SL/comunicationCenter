@@ -1,14 +1,13 @@
 .container{    
-    position: fixed;
-    top: 46%;
+    position: relative;
+    top: 25px;
+    left: -25px;
     background-color: #FFFFFF;
     border-radius: 5%;
     min-height: 250px;
     margin-bottom: 0px;
     margin-right: 0px;
-    overflow: hidden;
-    width: 15%;
-    float: left;
+    min-width: 312px;
 }
 form {
     display: inline-block;
@@ -18,7 +17,6 @@ form {
     position: absolute;
     top: 32%;
     left: 5%;
-	font-family:"Trebuchet MS";
     font-size:20px;
 	color:#000000;
     cursor:pointer;
@@ -27,7 +25,7 @@ h5{
     position: relative;
     left: 5%;
     top: 2px;
-    color: #007AFF;
+    color: #238BFE;
 }
 .header{
     width: 100%;
@@ -35,7 +33,7 @@ h5{
     border-block-end: 1px solid #EFF0F0;    
 }
 .col-3{float: left; 
-    width: 740px;
+    width: 905px;
     margin: 0px 0%; 
     position: relative;}
 input[type="text"]{color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
@@ -47,14 +45,14 @@ input[type="text"]{color: #333; width: 100%; box-sizing: border-box; letter-spac
     left: 5%; 
     width: 0; 
     height: 2px; 
-    background-color: #74B6FF;
+    background-color: #238BFE;
     transition: 0.4s;}
 .effect-1:focus ~ .focus-border{
     width: 90%; transition: 0.4s;}
 
 h1{
     position: absolute;
-    color: #74B6FF;
+    color: #238BFE;
     left: 85%;
     top: -13px;
     border-radius: 5px;
@@ -144,7 +142,7 @@ h1{
     height: 100%;
   }
   .btn-border-o.btn-blue:before, .btn-border-o.btn-blue:after {
-    border-color: #3498db;
+    border-color: #238BFE;
   }
 
   .border{
