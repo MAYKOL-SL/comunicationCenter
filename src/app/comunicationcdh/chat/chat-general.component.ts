@@ -187,7 +187,7 @@ export class ChatGeneralComponent{
         console.log(mensajes);
         $(".titulo").text(nombre);
         $("span").remove('#'+id);
-        $("#foto-perfil").attr("src",foto);
+        $("#foto-other").attr("src",foto);
         this.mensajes = mensajes;
         //$(location).attr('href',"mensaje");
         
