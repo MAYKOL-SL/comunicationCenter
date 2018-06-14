@@ -1,0 +1,562 @@
+/*imagen completa*/
+
+.imagen-complet {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    vertical-align: bottom;
+}
+
+
+/*.img-complet{
+    width: 348px;
+    height: 337px;
+ }*/
+
+
+/* 2 columnas para smarfonts */
+
+@media (min-width: 320px) {
+    .img-complet {
+        width: 100%;
+        height: 337px;
+    }
+}
+
+
+/* 4 columnas para grandes tablets*/
+
+@media (min-width: 992px) {
+    .img-complet {
+        width: 400px;
+        height: auto;
+    }
+}
+
+
+/*bodrde del car*/
+
+.card-borde {
+    border-radius: 1.25rem;
+}
+
+.color-header {
+    background: #f9f8f800;
+}
+
+.update-card-MDimentions {
+    width: 47px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.media-heading {
+    font-size: medium;
+}
+
+.info {
+    font-size: x-small;
+}
+
+.card-pad {
+    padding: 0rem;
+}
+
+.icons {
+    margin: 0 auto;
+    display: table;
+}
+
+@media (min-width: 320px) {
+    .icon-pad {
+        padding: 1px 16px 1px 4px;
+    }
+}
+
+
+/* 4 columnas para grandes tablets*/
+
+@media (min-width: 992px) {
+    .icon-pad {
+        padding: 1px 27px 1px 0px;
+    }
+}
+
+
+/*ultimo añadido*/
+
+@media (min-width: 320px) {
+    .des {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .des {
+        display: block;
+    }
+}
+
+
+/*iconos centreado*/
+
+.nav-tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+
+@media (min-width: 320px) {
+    .nav>li>a {
+        position: relative;
+        display: block;
+        /*padding: 0px 31px;*/
+    }
+    .contLike {
+        left: 50px;
+        cursor: pointer;
+    }
+    #p1-like {
+        left: 46px;
+        position: absolute;
+    }
+    .contChat {
+        left: 150px;
+        cursor: pointer;
+    }
+    #p1-comment {
+        left: 165px;
+        position: absolute;
+    }
+    .contShare {
+        left: 230px;
+    }
+    #p1-share {
+        left: 265px;
+        position: absolute;
+    }
+}
+
+
+/* 4 columnas para grandes tablets*/
+
+@media (min-width: 992px) {
+    .nav>li>a {
+        position: relative;
+        display: block;
+        /*padding: 0px 36px;*/
+    }
+    .contLike {
+        left: 60px;
+        cursor: pointer;
+    }
+    #p1-like {
+        left: 55px;
+        position: absolute;
+    }
+    .contChat {
+        left: 150px;
+        cursor: pointer;
+    }
+    #p1-comment {
+        left: 170px;
+        position: absolute;
+    }
+    .contShare {
+        left: 230px;
+    }
+    #p1-share {
+        left: 278px;
+        position: absolute;
+    }
+}
+
+.alin-numer {
+    display: contents;
+}
+
+
+/*añadido para el icono*/
+
+
+/*css buscador que aparece con modal*/
+
+.bord-serch {
+    padding: 35px 1px 1px 1px;
+}
+
+.search-form {
+    position: relative;
+    top: 2%;
+    left: 50%;
+    /*width: 350px;*/
+    height: 40px;
+    border-radius: 40px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.search-form.focus {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.search-input {
+    position: absolute;
+    top: 10px;
+    left: 38px;
+    font-size: 14px;
+    background: none;
+    color: #5a6674;
+    width: 195px;
+    height: 20px;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.search-input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.search-button {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.search-button svg {
+    width: 20px;
+    height: 20px;
+    fill: #5a6674;
+}
+
+.search-option {
+    position: absolute;
+    text-align: right;
+    top: 10px;
+    right: 15px;
+}
+
+.search-option div {
+    position: relative;
+    display: inline-block;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+.search-option div input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.01;
+    cursor: pointer;
+}
+
+.search-option div span {
+    position: absolute;
+    display: block;
+    text-align: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+    background: #929AA3;
+    color: #fff;
+    font-size: 9px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 4px 7px;
+    border-radius: 12px;
+    top: -18px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.search-option div span::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-top: 4px solid #929AA3;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.search-option div:hover span {
+    opacity: 1;
+    top: -21px;
+}
+
+.search-option div label {
+    display: block;
+    cursor: pointer;
+}
+
+.search-option div svg {
+    height: 20px;
+    width: 20px;
+    fill: #5a6674;
+    opacity: 0.6;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    pointer-events: none;
+}
+
+.search-option div:hover svg {
+    opacity: 1;
+}
+
+.search-option div input:checked+label svg {
+    fill: #e24040;
+    opacity: .9;
+}
+
+.search-option div input:checked+label span {
+    background: #e24040;
+}
+
+.search-option div input:checked+label span::after {
+    border-top-color: #e24040;
+}
+
+
+/*buscador header*/
+
+.header-search-span {
+    float: right;
+    width: 250px;
+    display: inline-block;
+}
+
+.header-search {
+    width: 230px;
+    position: relative;
+    float: left;
+}
+
+.header-search input {
+    position: absolute;
+    width: 0px;
+    float: Left;
+    margin-left: 210px;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    border-radius: 0;
+    padding: 0 2px 0 2px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.header-search:hover input,
+.header-search input:focus {
+    width: 200px;
+    margin-left: 0px;
+    color: #ffffff;
+    font-weight: bold;
+    background: rgba(9, 11, 9, 0.93);
+}
+
+.header-search input::placeholder {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.btn-srch {
+    position: absolute;
+    right: 0;
+    border: 0;
+    background: transparent;
+}
+
+.img-border {
+    width: 20px;
+    height: 21px;
+    border-radius: 50%;
+}
+
+
+/*modal*/
+
+
+/*header modal*/
+
+.modal-header {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    ;
+    background: url("../../../assets/images/Back.svg");
+    line-height: 30px;
+    top: 5%;
+}
+
+#text-back {
+    position: absolute;
+    font-weight: normal;
+    color: #1082FF;
+    line-height: 30px;
+    top: 2%;
+    left: 40px;
+    cursor: pointer;
+}
+
+#text-principal {
+    position: absolute;
+    font-weight: normal;
+    line-height: 30px;
+    top: 2%;
+    left: 45%;
+}
+
+#cant-like {
+    position: absolute;
+    font-weight: normal;
+    line-height: 30px;
+    top: 2%;
+    left: 85%;
+}
+
+#like-comment {
+    position: absolute;
+    font-weight: normal;
+    line-height: 30px;
+    top: 2%;
+    left: 90%;
+    width: 30px;
+    height: 30px;
+}
+
+
+/*fin header modal*/
+
+
+/*body modal*/
+
+.modal-body {
+    background-color: #EBEBEF;
+    overflow-y: scroll;
+    width: 100%;
+    height: 350px;
+}
+
+
+/*fin body modal*/
+
+
+/*fooder modal*/
+
+.modal-footer {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.message-submit {
+    position: absolute;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: #FFFFFF;
+    margin: 2px;
+    padding: 1%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 100px;
+    font-size: 2px;
+    line-height: 30px;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+}
+
+.imagen-sent {
+    position: relative;
+    font-weight: normal;
+    line-height: 30px;
+    top: 0%;
+    left: 30%;
+    width: 36px;
+    height: 68px;
+    cursor: pointer;
+}
+
+.modal-footer {
+    background-color: #EBEBEF;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+
+/*fin fooder modal*/
+
+
+/*aumentado el ancho del las publicaciones */
+
+.ancho-card {
+    width: 402px;
+    right: 25px;
+}
+
+
+/*aumentado el ancho del las publicaciones fin*/
+
+
+/*todo lo responsibo aqui*/
+
+@media (min-width: 320px) {
+    .search-form {
+        width: 288px;
+    }
+    .ancho-card {
+        width: auto;
+        right: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .search-form {
+        width: 350px;
+    }
+    .ancho-card {
+        width: 402px;
+        right: 25px;
+    }
+}
+
+
+/*todo lo responsibo aqui fin */
+
+
+/*nuevo anadido para el comentario del usuario*/
+
+.coment-text {
+    padding: 10px 10px 10px 10px;
+}
