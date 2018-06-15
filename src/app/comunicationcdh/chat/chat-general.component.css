@@ -422,19 +422,28 @@
 }
 
 .mensaje-texto{
-    width: 70%;
-    padding-left: 1%;
-    padding-right: 1%;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 #message-text{
     border-radius: 20px;
 }
 .input-group-btn{
     border-radius: 35%;
-    width: 15%;
+    width: 5%;
 }
 .input-group .btn{
     background-color: white;
     border-radius: 20px;
 }
-
+#add{
+    position: absolute;
+    left: 0%;
+}
+#envoi{
+    position: absolute;
+    right: 0%;
+}
