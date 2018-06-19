@@ -71,10 +71,15 @@
                 </div>
             </div>
             <div class="modal-body">
-
+                <div *ngFor="let mensaje of mensajes" class="chat-mensaje">
+                    <div  class="message message-in">
+                        {{mensaje.mens}}
+                    </div>
+                    
+                </div>
             </div>
             <div class="modal-footer">
-                <textarea class="message-input" id="chatComentario"></textarea>
+                <textarea class="message-input" id="chatComentario" ></textarea>
                 <div id="cont-Comentario">
                     <button type="submit" class="message-submit"></button>
                     <img class="imagen-sent" src="../../../assets/images/Sent.svg">
@@ -83,4 +88,5 @@
         </div>
     </div>
 </div>
+
 <!--publicacion comentarios fin-->

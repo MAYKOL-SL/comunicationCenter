@@ -447,3 +447,24 @@
     position: absolute;
     right: 0%;
 }
+/*opciones*/
+#document{
+    position: absolute;
+    left: 0%;
+}
+#maps{
+    position: absolute;
+    left: 20%;
+}
+#img{
+    position: absolute;
+    left: 40%;
+}
+#contact{
+    position: absolute;
+    left: 60%;
+}
+#music{
+    position: absolute;
+    left: 80%;
+}

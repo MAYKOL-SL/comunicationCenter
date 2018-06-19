@@ -191,7 +191,6 @@ export class ChatGeneralComponent{
         this.mensajes = mensajes;
         //$(location).attr('href',"mensaje");
         
-        
         if (matchMedia('(max-width: 767px)').matches) {
             $("#izquierda").css("display", "none");
             $("#derecha").css("display", "block");
@@ -211,5 +210,9 @@ export class ChatGeneralComponent{
         }
         
         //$(location).attr('href',"mensaje");
+    }
+    myFunctionOptions(){
+        $("#enviar").css("display", "none");
+        $("#opciones").css("display", "block");
     }
 }

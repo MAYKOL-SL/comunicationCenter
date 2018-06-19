@@ -74,21 +74,6 @@
         </div>
         <div id="derecha" class="col-12 col-sm-12 col-md-7 derecha">
             <div class="panel panel-default">
-                <!--<div class="panel-heading text-center">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="icon"><span class="fa fa-chevron-left"></span></div>
-                        </div>
-                        <div class="col-md-offset-3 col-md-4">
-                            <div id="contact"><img id="foto-perfil" src= {{contact1.imagen}} class="rounded-circle">
-                            </div>
-                                    Nick
-                        </div>
-                        <div class="col-md-offset-3 col-md-4">
-                            <div class="icon"><span class="fa fa-info-circle"></span></div>
-                        </div>
-                    </div>
-                </div>-->
                 <div class="panel-body">
                     <div class="date">
                         <span class="bold">Today</span> 11:54
@@ -109,16 +94,35 @@
                     </div>
                 </div>
                 <div class="panel-footer">
-                    <form>
+                    <form id="enviar" style="display: block;">
                         <div class="input-group">
                             <span class="input-group-btn">
-                                <button id="add" data-toggle="modal" href="#modal-photo" class="btn btn-default" type="button"><span class="fa fa-plus"></span></button>
+                                <button (click)="myFunctionOptions()" id="add" data-toggle="modal" data-target="#myModal" class="btn btn-default" type="button"><span class="fa fa-plus"></span></button>
                             </span>
                             <a class="mensaje-texto">
                                 <input id="message-text" type="text" class="form-control" placeholder="Write here">
                             </a>
                             <span class="input-group-btn">
                                 <button (click)="myFunctionMessage(mensajes)" id="envoi" class="btn btn-default" type="button"><span class="fa fa-send"></span></button>
+                            </span>
+                        </div>
+                    </form> 
+                    <form id="opciones" style="display: none;">
+                        <div class="input-group" >
+                            <span id="document" class="input-group-btn" >
+                                <button  data-toggle="modal" data-target="#myModal" class="btn btn-default" type="button"><span class="fa fa-file"></span></button>
+                            </span>
+                            <span id="maps" class="input-group-btn">
+                                <button  data-toggle="modal" data-target="#myModal" class="btn btn-default" type="button"><span class="fa fa-plus"></span></button>
+                            </span>
+                            <span id="img" class="input-group-btn">
+                                <button  data-toggle="modal" data-target="#myModal" class="btn btn-default" type="button"><span class="fa fa-image"></span></button>
+                            </span>
+                            <span id="contact" class="input-group-btn">
+                                <button  data-toggle="modal" data-target="#myModal" class="btn btn-default" type="button"><span class="fa fa-users"></span></button>
+                            </span>
+                            <span id="music" class="input-group-btn">
+                                <button  data-toggle="modal" data-target="#myModal" class="btn btn-default" type="button"><span class="fa fa-music"></span></button>
                             </span>
                         </div>
                     </form>

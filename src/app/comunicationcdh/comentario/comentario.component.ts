@@ -13,6 +13,7 @@ export class ComentarioComponent implements OnInit {
    coment4: Coment;
    coment5: Coment;
    coment6: Coment;
+   public mensaje: String;
 
    listComentarios: Coment[];
    
@@ -31,4 +32,13 @@ export class ComentarioComponent implements OnInit {
     console.log(this.listComentarios);
   }
 
+  public myFunctionMessage(mensajes){
+    console.log(mensajes);
+    var message_text = $('#message-text').val();
+    console.log(message_text);
+    if(message_text !== ''){
+        this.aux = new Mensaje(1, '9:10 am', message_text, 'other', true);
+        mensajes.push(this.aux);
+        $('#message-text').val(' ')
+    }
 }
