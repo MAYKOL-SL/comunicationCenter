@@ -58,7 +58,7 @@
         </ul>
     </div>
 </div>
-<div id="comment" class="modal fade" id="ModalChat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div ng-app="myApp" id="comment" class="modal fade" id="ModalChat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -70,19 +70,39 @@
                     <img id="like-comment" src="../../../assets/images/Like_OFF.svg">
                 </div>
             </div>
-            <div class="modal-body">
-                <div *ngFor="let mensaje of mensajes" class="chat-mensaje">
-                    <div  class="message message-in">
-                        {{mensaje.mens}}
-                    </div>
-                    
-                </div>
+            <div class="modal-body" ng-controller="myCtrl">
+                <ul *ngFor="let comentario of comentarios" class="list-group ">
+                        <div class="card comentarios-card">
+                            <li class="list-group-item">
+                                <div class="information">
+                                    <div class="info-foto col-md-3">
+                                        <img src= {{comentario.imagen}}>
+                                    </div>
+                                    <div class="info-nomMens col-md-9">
+                                        <div class="info-nombre">
+                                            <a>{{comentario.nombre}}</a>
+                                        </div>
+                                        <a class="info-mensaje">{{comentario.mensaje}}</a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <span class="like" >
+                                        <a class="">1</a>
+                                        <img id="like-comentario" src="../../../assets/images/Like_OFF.svg">
+                                    </span>
+                                    <span class="comment" >
+                                        <img id="comment-comentario" src="../../../assets/images/Icons nuevos svg/CHAT_OFF.svg">
+                                    </span>
+                                </div>
+                            </li>
+                        </div>
+                </ul>
             </div>
             <div class="modal-footer">
                 <textarea class="message-input" id="chatComentario" ></textarea>
                 <div id="cont-Comentario">
-                    <button type="submit" class="message-submit"></button>
-                    <img class="imagen-sent" src="../../../assets/images/Sent.svg">
+                    <button (click)="myFunctionComentar(comentarios)" type="submit" class="message-submit"></button>
+                    <img (click)="myFunctionComentar(comentarios)" class="imagen-sent" src="../../../assets/images/Sent.svg">
                 </div>
             </div>
         </div>

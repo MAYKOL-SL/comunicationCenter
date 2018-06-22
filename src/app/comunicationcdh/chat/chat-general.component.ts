@@ -119,6 +119,7 @@ export class ChatGeneralComponent{
         //contactos y activos
         this.contactos = [
             new Contact(1, 'Nick Jones', 'assets/imagenes/contactos/nick.png', true, true, 'hola', nick, '9:12 pm', 1),
+            
             new Contact(2, 'Eva Moor', 'assets/imagenes/contactos/eva.png', false, false, 'hola' , eva, '9:12 pm', 1),
             new Contact(3, 'Jack Williams', 'assets/imagenes/contactos/lee.png', true, false, 'hola',  jack, '9:12 pm', 1),
             new Contact(4, 'Lee Wong', 'assets/imagenes/contactos/nick.png', true, true, 'hola',  lee, '9:12 pm', 1),

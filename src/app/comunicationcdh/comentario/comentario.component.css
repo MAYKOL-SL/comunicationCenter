@@ -560,3 +560,45 @@
 .coment-text {
     padding: 10px 10px 10px 10px;
 }
+/*comentarios*/
+.like{
+    padding-left: 20%;
+}
+#like-comentario{
+    width: 25px;
+}
+.comment{
+    padding-left: 45%;
+}
+#comment-comentario{
+    width: 25px;
+}
+/*comentarios*/
+.comentarios-card{
+    border-radius: 20px;
+}
+.comentarios-card li{
+    border-radius: 20px;
+}
+.information{
+    padding: 10px;
+}
+.info-foto{
+    display: inline-block;
+    width: 30%;
+}
+.info-foto img{
+    border-radius: 50%;
+    width: 50px;
+}
+.info-nomMens{
+    display: inline-block;
+    width: 70%;
+}
+.info-nombre{
+    width: 100%;
+}
+.card-body{
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
