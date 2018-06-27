@@ -76,7 +76,18 @@
   });
   });
 </script>
-
+<script type="text/javascript">
+function incrementaValor(valorMaximo){
+	var value = parseInt(document.getElementById('resultado').value,0);
+  value = isNaN(value) ? 0 : value;
+  if(value >= 1) {
+    value = valorMaximo -1;
+  }else{
+    value++;
+  }
+  document.getElementById('resultado').value = value;
+}
+</script>
 <script type="text/javascript">
   $(document).ready(function(){
     //Hide clear btn on page load

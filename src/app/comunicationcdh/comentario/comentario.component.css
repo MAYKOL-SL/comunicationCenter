@@ -1,3 +1,10 @@
+#resultado{
+    width: 20px;
+    background: #F7F7F7;
+    border: 0px;
+}
+
+
 /*imagen completa*/
 
 .imagen-complet {
@@ -114,9 +121,12 @@
         left: 50px;
         cursor: pointer;
     }
-    #p1-like {
+    #resultado{
         left: 46px;
         position: absolute;
+        width: 20px;
+        background: #F7F7F7;
+        border: 0px;
     }
     .contChat {
         left: 150px;
@@ -148,9 +158,12 @@
         left: 60px;
         cursor: pointer;
     }
-    #p1-like {
-        left: 55px;
+    #resultado{
+        left: 46px;
         position: absolute;
+        width: 20px;
+        background: #F7F7F7;
+        border: 0px;
     }
     .contChat {
         left: 150px;

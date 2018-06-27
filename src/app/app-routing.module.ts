@@ -26,7 +26,7 @@ const routes: Routes = [
     component: CalendarComponent
   },
   {
-  path: 'chat',
+  path: 'email',
   component: CommentComponent
   },
   {
