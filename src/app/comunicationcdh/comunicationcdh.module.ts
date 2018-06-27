@@ -22,11 +22,14 @@ import { PublicacionImgLinkComponent } from './publicacion-img-link/publicacion-
 import { PublicacionSliderComponent } from './publicacion-slider/publicacion-slider.component';
 import { EmailPrincipalComponent } from './email-principal/email-principal.component';
 import { ComentarioComponent } from './comentario/comentario.component';
+import { FormsModule } from '@angular/forms'
 
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
+
   ],
   declarations: [LoginComponent, PrincipalComponent, CalendarComponent,
                   MenuComponent, HeaderComponent, PerfilComponent, PublicacionesComponent,

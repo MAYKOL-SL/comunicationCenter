@@ -13,16 +13,317 @@
             </div>
             <!-- Columna2 central-->
             <div id="central" class="col-md-4">
+                <!--buscador de dh publicaciones principal inicio-->
                 <!--buscador-->
+                <div class="bord-serch">
+                    <form class="search-form">
+                        <label class="search-input"> <a href="#" data-toggle="modal" data-target="#modlaPublicaciones">Write something</a></label>
+                        <a class="search-button" href="#">
+                            <img class="img-border" src="../../../assets/images/usuariomuro.jpg" alt="...">
+                        </a>
+                        <!--/button-->
+                        <div class="search-option">
+                            <div>
+                                <input name="type" type="radio" value="type-images" id="type-images">
+                                <label for="type-images" data-toggle="modal" data-target="#modlaGaleriaimg">
+                                    <svg class="edit-pen-title">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#images"></use>
+                                    </svg>
+                                    <span>Images</span>
+                                </label>
+                            </div>
+                            <div>
+                                <input name="type" type="radio" value="type-posts" id="type-posts">
+                                <label for="type-posts" data-toggle="modal" data-target="#modlaPublicaciones">
+                                    <svg class="edit-pen-title">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#event"></use>
+                                    </svg>
+                                    <span>Events</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
-                <dh-publicaciones></dh-publicaciones>
-                <dh-comentario></dh-comentario>
+                <!--MODALS CON BARIAS IMAGENES DEL BUSCAOR CENTRAL Y PUBLICACIONES-->
+                <!-- Modal imagens -->
+                <div class="modal fade" id="modlaGaleriaimg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div id="btn-back">
+                                    <button type="button" class="close alineado-icon" data-dismiss="modal"></button>
+                                    <label id="text-back" data-dismiss="modal"> Atras </label>
+                                    <label id="text-principal">Select your photographs </label>
+                                    <!--label id="cant-like"> 51 </label> 
+                                <img id="like-comment" src="../../../assets/images/Like_OFF.svg"-->
+                                </div>
+
+                            </div>
+                            <div class="modal-body">
+                                <!--contenido del centro inicio-->
+                                <div class="container">
+
+
+                                    <div class="row text-center text-lg-left">
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dehultimo.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dff.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dharbor.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dhc.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dhcdos.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dhh.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dhm.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dhmagdif.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dho.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dhtru.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dhu.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dhumms.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/dhun.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/diftal.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/digitalc.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/digitalcdos.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/digitalcer.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/digitalctres.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/digitalcun.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6">
+                                            <a href="#" class="d-block mb-4 h-100">
+                                                <img class="img-fluid-g img-thumbnail" src="../../../assets/images/imgdh/digitalh.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <!--contenido del centro fin-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal publicaciones -->
+                <div class="modal fade bd-example-modal-lg" id="modlaPublicaciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog " role="document">
+                        <div class="modal-content bordeado-modal">
+                            <div class="modal-header">
+
+                                <div class="media block-update-card">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object update-card-MDimentions" src="../../../assets/images/usuario.jpg" alt="...">
+                                    </a>
+                                    <div class="media-body update-card-body">
+                                        <h4 class="media-heading">Manning Hilton</h4>
+                                        <p class="info">Digital Harbor</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="fa fa-power-off fa-lg" aria-hidden="true"></span>
+                                                </button>
+                            </div>
+                            <div class="modal-body borde-body-modal">
+                                <!--contenido del centro inicio-->
+                                <form>
+                                    <textarea #colorText class="alineado-textoA" name="comentario" [(ngModel)]="model.comentario" rows="11" cols="53">We don't just work in cutting edge tecnologies, *we create part of future*</textarea>
+
+                                    <button type="button" class="btn btn-primary btn-lg btn-block" type="submit" (click)="addComentario()">Block level button</button>
+                                </form>
+                                <div class="contenedor-buton-opciones">
+                                    <div class="content-herder-mod">
+                                        <div class="content-herder-mod1">
+
+                                            <div class="alineado-contenedor">
+
+                                                <div class="borde-contenedor-iconos-modal">
+                                                    <div class="alineado-icono-buscador-modal">
+                                                        <div>
+                                                            <a href="javascript:void(document.getElementById('colorText').style.backgroundColor='yellow')"><img class="tam-icon-svg" src="../../../assets/images/Icons nuevos svg/Template 4.svg" alt="..."></a>
+                                                        </div>
+                                                        <div>
+                                                            <!--a- href="#" (click)="cambiarColor()"><img class="tam-icon-svg" src="../../../assets/images/Icons nuevos svg/Template 3.svg" alt="..."></a-->
+                                                            <img (click)="cambiarColor()" class="tam-icon-svg" src="../../../assets/images/Icons nuevos svg/Template 3.svg" alt="...">
+                                                        </div>
+                                                        <div>
+                                                            <img (click)="cambiarTexto()" class="tam-icon-svg" src="../../../assets/images/Icons nuevos svg/Template 2.svg" alt="...">
+                                                        </div>
+                                                        <div>
+                                                            <a href="#"><img class="tam-icon-svg" src="../../../assets/images/Icons nuevos svg/Template 1.svg" alt="..."></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="borde-contenedor2-iconos-modal">
+                                                    <div class="alineado-icono-buscador-modal">
+                                                        <div>
+                                                            <a href="#"><img class="tam-icon-svg2" src="../../../assets/images/Icons nuevos svg/FILE OFF.svg" alt="..."></a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#"><img class="tam-icon-svg2" src="../../../assets/images/Icons nuevos svg/Picture.svg" alt="..."></a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#"><img class="tam-icon-svg2" src="../../../assets/images/Icons nuevos svg/Event.svg" alt="..."></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="content-herder-mod2">
+                                            <div class="separacion-boton">
+                                                <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--contenido del centro fin-->
+                            </div>
+                            <!--div class="modal-footer borde-foter-icom">
+                                        
+
+                                        <div class="content-herder-mod">
+                                            <div class="content-herder-mod1">
+
+                                                <div class="alineado-contenedor">
+
+                                                    <div class="borde-contenedor-iconos-modal">
+                                                        <div class="alineado-icono-buscador-modal">
+                                                            <div>
+                                                                <a href="#"><img class="tam-icon-svg" src="img/Template 4.svg" alt="..."></a>
+                                                            </div>
+                                                            <div>
+                                                                <a href="#"><img class="tam-icon-svg" src="img/Template 3.svg" alt="..."></a>
+                                                            </div>
+                                                            <div>
+                                                                <a href="#"><img class="tam-icon-svg" src="img/Template 2.svg" alt="..."></a>
+                                                            </div>
+                                                            <div>
+                                                                <a href="#"><img class="tam-icon-svg" src="img/Template 1.svg" alt="..."></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="borde-contenedor2-iconos-modal">
+                                                        <div class="alineado-icono-buscador-modal">
+                                                            <div>
+                                                                <a href="#"><img class="tam-icon-svg2" src="img/FILE OFF.svg" alt="..."></a>
+                                                            </div>
+                                                            <div>
+                                                                <a href="#"><img class="tam-icon-svg2" src="img/Picture.svg" alt="..."></a>
+                                                            </div>
+                                                            <div>
+                                                                <a href="#"><img class="tam-icon-svg2" src="img/Event.svg" alt="..."></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="content-herder-mod2">
+                                                <div class="separacion-boton">
+                                                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>-->
+                            <!--contenido del foder fin-->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--MODAL CON BUSCADOR Y PUBLICACIONES FIN-->
+                <!--buscador de dh publicaciones principal fin-->
+
+                <!--dh-publicaciones></dh-publicaciones-->
+                <div *ngFor="let comentariosUsuario of coment">
+                    <dh-comentario [listComentarios]="comentariosUsuario"></dh-comentario>
+                </div>
                 <dh-publicacion-img-un></dh-publicacion-img-un>
                 <dh-publicacion-img-much></dh-publicacion-img-much>
                 <dh-publicacion-img-link></dh-publicacion-img-link>
                 <dh-publicacion-slider></dh-publicacion-slider>
                 <dh-publicacion-img-tres></dh-publicacion-img-tres>
                 <dh-video-local></dh-video-local>
+
             </div>
             <!--Columna 3 derecha-->
             <div id="derecha" class="col-md-4">
@@ -39,9 +340,9 @@
     <!-- /.container -->
 </div>
 <!-- Footer -->
-<footer class="py-5 bg-dark">
+<footer class="py-5 bg-with">
     <div class="container">
-        <p class="m-0 text-center text-white">DH &copy; Your Website 2018</p>
+        <!--p class="m-0 text-center text-white">DH &copy; Your Website 2018</p-->
     </div>
     <!-- /.container -->
 </footer>
